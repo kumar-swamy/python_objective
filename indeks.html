@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Turtle Facts and Quiz</title>
+    <title>kyuij</title>
     <!-- Bootstrap css and my own css -->
     <link rel="stylesheet" 
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
@@ -90,10 +90,10 @@
             <div class="row">
                 <div class="alert alert-danger"
                     ng-show="quiz.error">
-                    Error! You have not answered all of the questions!
+                    Error! yu have not aansrd aal of kuestions!
                     <button class="close" ng-click="quiz.error = false">&times</button>
                 </div>
-                <h3>Question:</h3>
+                <h3>kuestion:</h3>
                 <div class="well well-sm" ng-hide="quiz.finalise">
                     <div class="row">
                         <div class="col-xs-12">
@@ -129,7 +129,7 @@
                 <div class="well well-sm" ng-show="quiz.finalise">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h3>Are you sure you want to submit your answers?</h3>
+                            <h3>aar yu sure you vant to sbmit your aansrs?</h3>
                             <button class="btn btn-success" ng-click="quiz.finaliseAnswers()">Yes</button>
                             <button class="btn btn-danger" ng-click="quiz.finalise = false">No</button>
                         </div>
@@ -142,7 +142,7 @@
         <div ng-controller="resultsCtrl as results" ng-show="results.quizMetrics.resultsActive">
            <div class="row">
                <div class="col-xs-8">
-                   <h2>Results:</h2>
+                   <h2>rijAlts:</h2>
                    <div class="btn-toolbar">
                        <button class="btn" ng-repeat="question in results.dataService.quizQuestions" ng-class="{'btn-success': question.correct, 'btn-danger': !question.correct}" ng-click="results.setActiveQuestion($index)">
                             <span class="glyphicon" ng-class="{'glyphicon-ok': question.correct, 'glyphicon-remove': !question.correct}"></span>
@@ -158,7 +158,7 @@
            </div>
 
            <div class="row">
-               <h3>Questions:</h3>
+               <h3>kuestions:</h3>
                <div class="well well-sm">
                    <div class="row">
                        <div class="col-xs-12">

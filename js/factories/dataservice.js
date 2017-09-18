@@ -11,13 +11,13 @@
     var correctAnswers = [3, 3];
     var quizQuestions  = [
         {
-            type: "text", text: "1)li = [3, 5, 10]. li[-3] is : ? --- hint negative indeks starts from last.",
+            type: "text", text: "li = [3, 5, 10]. li[-3] is : ? --- hint negative indeks starts from last.",
             possibilities: [ { answer: "none" }, { answer: "error" }, { answer: "0" } , { answer: "3" }],
             selected: null,
             correct: null
         },
         {
-            type: "text", text: "2)property in python is : ? --- hint @propety",
+            type: "text", text: "property in python is : ? --- hint @propety",
             possibilities: [ { answer: "class" }, { answer: "function" }, { answer: "attribute" }, { answer: "decorator" } ],
             selected: null,
             correct: null
