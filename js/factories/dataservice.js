@@ -17,7 +17,7 @@
             correct: null
         },
         {
-            type: "text", text: "property in python is : ? --- hint @propety",
+            type: "text", text: "property in python is : ? --- hint @property",
             possibilities: [ { answer: "class" }, { answer: "function" }, { answer: "attribute" }, { answer: "decorator" } ],
             selected: null,
             correct: null

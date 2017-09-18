@@ -13,7 +13,6 @@
 </head>
 <body>
     <div class="container">
-        <div class="page-header"> <h3> python kuij </h3> </div>
         <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
             <form class="form-inline well well-sm clearfix">
                 <span class="glyphicon glyphicon-search"></span>
@@ -75,8 +74,8 @@
         <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
             <div class="row">
                 <div class="col-xs-8">
-                    <h2>progress:</h2>
                     <div class="btn-toolbar">
+                        <h2>progress:</h2>
                         <button class="btn"
                             ng-repeat="question in quiz.dataService.quizQuestions"
                             ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null}" 
@@ -88,12 +87,10 @@
             </div><!-- progress area -->
 
             <div class="row">
-                <div class="alert alert-danger"
-                    ng-show="quiz.error">
+                <div class="alert alert-danger" ng-show="quiz.error">
                     Error! yu have not aansrd aal of kuestions!
                     <button class="close" ng-click="quiz.error = false">&times</button>
                 </div>
-                <h3>kuestion:</h3>
                 <div class="well well-sm" ng-hide="quiz.finalise">
                     <div class="row">
                         <div class="col-xs-12">
@@ -142,7 +139,7 @@
         <div ng-controller="resultsCtrl as results" ng-show="results.quizMetrics.resultsActive">
            <div class="row">
                <div class="col-xs-8">
-                   <h2>rijAlts:</h2>
+                   <h4>rijAlts:yu skored {{results.quizMetrics.numCorrect}} / {{results.dataService.quizQuestions.length}} {{results.calculatePerc() | number:2}}%</h4>
                    <div class="btn-toolbar">
                        <button class="btn" ng-repeat="question in results.dataService.quizQuestions" ng-class="{'btn-success': question.correct, 'btn-danger': !question.correct}" ng-click="results.setActiveQuestion($index)">
                             <span class="glyphicon" ng-class="{'glyphicon-ok': question.correct, 'glyphicon-remove': !question.correct}"></span>
@@ -152,13 +149,10 @@
            </div><!-- row -->
            <div class="row">
                <div class="col-xs-12 top-buffer">
-                    <h2>You Scored {{results.quizMetrics.numCorrect}} / {{results.dataService.quizQuestions.length}}</h2>
-                    <h2><strong>{{results.calculatePerc() | number:2}}%</strong></h2>
                </div>
            </div>
 
            <div class="row">
-               <h3>kuestions:</h3>
                <div class="well well-sm">
                    <div class="row">
                        <div class="col-xs-12">
