@@ -4,7 +4,7 @@
     function ListController(quizMetrics, DataService){
         var vm = this;
         vm.quizMetrics = quizMetrics; // Controllers reference to the quiz data from factory
-        vm.data = DataService.turtlesData; // Controller reference to the turtle info created in the factory
+        // vm.data = DataService.kuij_viki; // Controller reference to the turtle info created in the factory
         vm.activeTurtle = {}; // will be used in the view to hold the data of currently active turtle
         vm.changeActiveTurtle = changeActiveTurtle; // reference to a named function below
         vm.activateQuiz = activateQuiz; // reference to named function below
