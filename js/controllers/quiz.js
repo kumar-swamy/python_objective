@@ -1,5 +1,5 @@
 (function(){
-    angular.module("turtleFacts").controller("quizCtrl", QuizController);
+    angular.module("learn_facts").controller("quizCtrl", QuizController);
     QuizController.$inject = ['quizMetrics', 'DataService'];
     function QuizController(quizMetrics, DataService){
         var vm = this;
@@ -16,23 +16,23 @@
         function setActiveQuestion(index){
             if(index === undefined){
                 var breakOut = false;
-                var quizLength = DataService.kuijKuestions.length - 1;
+                var quizLength = DataService.kyuijKuestions.length - 1;
                 while(!breakOut){
                     vm.activeQuestion = vm.activeQuestion < quizLength?++vm.activeQuestion:0;
                     if(vm.activeQuestion === 0){ vm.error = true; }
-                    if(DataService.kuijKuestions[vm.activeQuestion][3] === null){ breakOut = true; }
+                    if(DataService.kyuijKuestions[vm.activeQuestion][3] === null){ breakOut = true; }
                 }
             }else{ vm.activeQuestion = index; } 
         }
         function questionAnswered(){
-            var quizLength = DataService.kuijKuestions.length;
+            var quizLength = DataService.kyuijKuestions.length;
             numQuestionsAnswered = 0;
             for(var x = 0; x < quizLength; x++){
-                if(DataService.kuijKuestions[vm.activeQuestion][3] !== null){
+                if(DataService.kyuijKuestions[vm.activeQuestion][3] !== null){
                     numQuestionsAnswered++;
                     if(numQuestionsAnswered >= quizLength){
                         for(var i = 0; i < quizLength; i++){
-                            if(DataService.kuijKuestions[i][3] === null){ setActiveQuestion(i); return; }
+                            if(DataService.kyuijKuestions[i][3] === null){ setActiveQuestion(i); return; }
                         }
                         vm.error = false;
                         vm.finalise = true;
@@ -42,7 +42,7 @@
             }
             vm.setActiveQuestion();
         }
-        function selectAnswer(index){ DataService.kuijKuestions[vm.activeQuestion][3] = index; } 
+        function selectAnswer(index){ DataService.kyuijKuestions[vm.activeQuestion][3] = index; } 
         function finaliseAnswers(){
             vm.finalise = false;
             numQuestionsAnswered = 0;

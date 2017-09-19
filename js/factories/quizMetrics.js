@@ -1,5 +1,5 @@
 (function(){
-    angular.module("turtleFacts").factory("quizMetrics", QuizMetrics); 
+    angular.module("learn_facts").factory("quizMetrics", QuizMetrics); 
         QuizMetrics.$inject = ['DataService'];
         function QuizMetrics(DataService){
             var quizObj = {
@@ -18,12 +18,12 @@
             }
             function markQuiz(){
                 quizObj.krAkt_ansrs = DataService.krAkt_ansrs;
-                for(var i = 0; i < DataService.kuijKuestions.length; i++){
-                    if(DataService.kuijKuestions[i][3] === DataService.krAkt_ansrs[i]){
-                        DataService.kuijKuestions[i][4] = true;
+                for(var i = 0; i < DataService.kyuijKuestions.length; i++){
+                    if(DataService.kyuijKuestions[i][3] === DataService.krAkt_ansrs[i]){
+                        DataService.kyuijKuestions[i][4] = true;
                         quizObj.numCorrect++;
                     }else{
-                        DataService.kuijKuestions[i][4] = false;
+                        DataService.kyuijKuestions[i][4] = false;
                     }
                 }
             }

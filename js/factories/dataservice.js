@@ -1,15 +1,15 @@
 (function(){
-    angular.module("turtleFacts").factory("DataService", DataService);
+    angular.module("learn_facts").factory("DataService", DataService);
     function DataService(){
         var dataObj = {
-            // kuij_viki: kuij_viki,
-            kuijKuestions: kuijKuestions,
+            // kyuij_viki: kyuij_viki,
+            kyuijKuestions: kyuijKuestions,
             krAkt_ansrs: krAkt_ansrs
         };
         return dataObj;
     }
     var krAkt_ansrs = [3, 0, 1, 2, 2, 1, 2, 2, 3, 3];
-    var kuijKuestions  = [
+    var kyuijKuestions  = [
         [
             "text",
             "li = [3, 5, 10]. li[-3] is : ? --- hint negative indeks starts from last.",
@@ -81,6 +81,6 @@
             null
         ]
     ];
-   //var kuij_viki = [ ];
+   //var kyuij_viki = [ ];
 
 })();

@@ -1,3 +1,3 @@
 (function(){
-    angular.module("turtleFacts", []);
+    angular.module("learn_facts", []);
 })();
