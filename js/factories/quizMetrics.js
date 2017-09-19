@@ -6,7 +6,7 @@
                 quizActive: false,
                 resultsActive: false,
                 changeState: changeState, // changeState is a named function below
-                correctAnswers: [],
+                krAkt_ansrs: [],
                 markQuiz: markQuiz, // markQuiz is a named function below
                 numCorrect: 0
             };
@@ -17,13 +17,13 @@
                 else{ return false; }
             }
             function markQuiz(){
-                quizObj.correctAnswers = DataService.correctAnswers;
-                for(var i = 0; i < DataService.quizQuestions.length; i++){
-                    if(DataService.quizQuestions[i].selected === DataService.correctAnswers[i]){
-                        DataService.quizQuestions[i].correct = true;
+                quizObj.krAkt_ansrs = DataService.krAkt_ansrs;
+                for(var i = 0; i < DataService.kuijKuestions.length; i++){
+                    if(DataService.kuijKuestions[i][3] === DataService.krAkt_ansrs[i]){
+                        DataService.kuijKuestions[i][4] = true;
                         quizObj.numCorrect++;
                     }else{
-                        DataService.quizQuestions[i].correct = false;
+                        DataService.kuijKuestions[i][4] = false;
                     }
                 }
             }

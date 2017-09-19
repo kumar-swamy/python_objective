@@ -10,19 +10,19 @@
         vm.reset = reset; // named function defined below
         vm.calculatePerc = calculatePerc; // named function defined below
         vm.activeQuestion = 0;
-        function calculatePerc(){ return quizMetrics.numCorrect / DataService.quizQuestions.length * 100; } 
+        function calculatePerc(){ return quizMetrics.numCorrect / DataService.kuijKuestions.length * 100; } 
         function setActiveQuestion(index){ vm.activeQuestion = index; }
         function getAnswerClass(index){
-            if(index === quizMetrics.correctAnswers[vm.activeQuestion]){ return "bg-success"; }
-            else if(index === DataService.quizQuestions[vm.activeQuestion].selected){ return "bg-danger"; }
+            if(index === quizMetrics.krAkt_ansrs[vm.activeQuestion]){ return "bg-success"; }
+            else if(index === DataService.kuijKuestions[vm.activeQuestion][3]){ return "bg-danger"; }
         }
         function reset(){
             quizMetrics.changeState("results", false);
             quizMetrics.numCorrect = 0;
-            for(var i = 0; i < DataService.quizQuestions.length; i++){
-                var data = DataService.quizQuestions[i]; //binding the current question to data to keep code clean
-                data.selected = null;
-                data.correct = null;
+            for(var i = 0; i < DataService.kuijKuestions.length; i++){
+                var data = DataService.kuijKuestions[i]; //binding the current question to data to keep code clean
+                data[3] = null;
+                data[4] = null;
             }
         }
     }

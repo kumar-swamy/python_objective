@@ -21,10 +21,10 @@
                     <div class="btn-toolbar">
                         <h2>progress:</h2>
                         <button class="btn"
-                            ng-repeat="question in quiz.dataService.quizQuestions"
-                            ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null}" 
+                            ng-repeat="question in quiz.dataService.kuijKuestions"
+                            ng-class="{'btn-info': question[3] !== null, 'btn-danger': question[3] === null}" 
                             ng-click="quiz.setActiveQuestion($index)">
-                            <span class="glyphicon" ng-class="{'glyphicon-pencil': question.selected !== null, 'glyphicon-question-sign': question.selected === null}"></span>
+                            <span class="glyphicon" ng-class="{'glyphicon-pencil': question[3] !== null, 'glyphicon-question-sign': question[3] === null}"></span>
                         </button>
                     </div>
                 </div>
@@ -38,25 +38,25 @@
                 <div class="well well-sm" ng-hide="quiz.finalise">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h4>{{quiz.activeQuestion+1 + ". " + quiz.dataService.quizQuestions[quiz.activeQuestion].text}}</h4>
+                            <h4>{{quiz.activeQuestion+1 + ". " + quiz.dataService.kuijKuestions[quiz.activeQuestion][1]}}</h4>
                             <div class="row"
-                                ng-if="quiz.dataService.quizQuestions[quiz.activeQuestion].type === 'text'">
-                                <div class="col-sm-6" ng-repeat="answer in quiz.dataService.quizQuestions[quiz.activeQuestion].possibilities">
+                                ng-if="quiz.dataService.kuijKuestions[quiz.activeQuestion][0] === 'text'">
+                                <div class="col-sm-6" ng-repeat="answer in quiz.dataService.kuijKuestions[quiz.activeQuestion][2]">
                                     <h4 class="answer"
-                                        ng-class="{'bg-info': $index === quiz.dataService.quizQuestions[quiz.activeQuestion].selected}"
+                                        ng-class="{'bg-info': $index === quiz.dataService.kuijKuestions[quiz.activeQuestion][3]}"
                                         ng-click="quiz.selectAnswer($index)">
-                                        {{answer.answer}}
+                                        {{answer}}
                                     </h4>
                                 </div>
                             </div>
                             <div class="row"
-                                ng-if="quiz.dataService.quizQuestions[quiz.activeQuestion].type === 'image'">
+                                ng-if="quiz.dataService.kuijKuestions[quiz.activeQuestion][0] === 'image'">
                                 <!-- more bootstrap and another ng-repeat, this time looping through the possible answers -->
-                                <div class="col-sm-6" ng-repeat="answer in quiz.dataService.quizQuestions[quiz.activeQuestion].possibilities">
+                                <div class="col-sm-6" ng-repeat="answer in quiz.dataService.kuijKuestions[quiz.activeQuestion][2]">
                                     <div class="image-answer"
-                                        ng-class="{'image-selected': $index === quiz.dataService.quizQuestions[quiz.activeQuestion].selected}"
+                                        ng-class="{'image-selected': $index === quiz.dataService.kuijKuestions[quiz.activeQuestion][3]}"
                                         ng-click="quiz.selectAnswer($index)">
-                                        <img ng-src="{{answer.answer}}">
+                                        <img ng-src="{{answer}}">
                                     </div>
                                 </div>
                             </div>
@@ -83,10 +83,10 @@
         <div ng-controller="resultsCtrl as results" ng-show="results.quizMetrics.resultsActive">
            <div class="row">
                <div class="col-xs-8">
-                   <h4>rijAlts:yu skored {{results.quizMetrics.numCorrect}} / {{results.dataService.quizQuestions.length}} {{results.calculatePerc() | number:2}}%</h4>
+                   <h4>rijAlts:yu skored {{results.quizMetrics.numCorrect}} / {{results.dataService.kuijKuestions.length}} {{results.calculatePerc() | number:2}}%</h4>
                    <div class="btn-toolbar">
-                       <button class="btn" ng-repeat="question in results.dataService.quizQuestions" ng-class="{'btn-success': question.correct, 'btn-danger': !question.correct}" ng-click="results.setActiveQuestion($index)">
-                            <span class="glyphicon" ng-class="{'glyphicon-ok': question.correct, 'glyphicon-remove': !question.correct}"></span>
+                       <button class="btn" ng-repeat="question in results.dataService.kuijKuestions" ng-class="{'btn-success': question[4], 'btn-danger': !question[4]}" ng-click="results.setActiveQuestion($index)">
+                            <span class="glyphicon" ng-class="{'glyphicon-ok': question[4], 'glyphicon-remove': !question[4]}"></span>
                        </button>
                    </div>
                </div>
@@ -100,21 +100,21 @@
                <div class="well well-sm">
                    <div class="row">
                        <div class="col-xs-12">
-                           <h4>{{results.activeQuestion+1 +". "+results.dataService.quizQuestions[results.activeQuestion].text}}</h4>
+                           <h4>{{results.activeQuestion+1 +". "+results.dataService.kuijKuestions[results.activeQuestion][1]}}</h4>
                            <div class="row"
-                               ng-if="results.dataService.quizQuestions[results.activeQuestion].type === 'text'">
-                               <div class="col-sm-6" ng-repeat="answer in results.dataService.quizQuestions[results.activeQuestion].possibilities">
+                               ng-if="results.dataService.kuijKuestions[results.activeQuestion][0] === 'text'">
+                               <div class="col-sm-6" ng-repeat="answer in results.dataService.kuijKuestions[results.activeQuestion][2]">
                                    <h4 class="answer" ng-class="results.getAnswerClass($index)">
-                                       {{answer.answer}}
+                                       {{answer}}
                                        <p class="pull-right"
-                                            ng-show="$index !== results.quizMetrics.correctAnswers[results.activeQuestion] && $index === results.dataService.quizQuestions[results.activeQuestion].selected">your aansr</p>
-                                       <p class="pull-right" ng-show="$index === results.quizMetrics.correctAnswers[results.activeQuestion]">korrect aansr</p>
+                                            ng-show="$index !== results.quizMetrics.krAkt_ansrs[results.activeQuestion] && $index === results.dataService.kuijKuestions[results.activeQuestion][3]">your aansr</p>
+                                       <p class="pull-right" ng-show="$index === results.quizMetrics.krAkt_ansrs[results.activeQuestion]">korrect aansr</p>
                                    </h4>
                                </div>
                            </div><!-- row -->
-                           <div class="row" ng-if="results.dataService.quizQuestions[results.activeQuestion].type === 'image'">
-                               <div class="col-sm-6" ng-repeat="answer in results.dataService.quizQuestions[results.activeQuestion].possibilities">
-                                   <div class="image-answer" ng-class="results.getAnswerClass($index)"> <img ng-src="{{answer.answer}}"> </div>
+                           <div class="row" ng-if="results.dataService.kuijKuestions[results.activeQuestion][0] === 'image'">
+                               <div class="col-sm-6" ng-repeat="answer in results.dataService.kuijKuestions[results.activeQuestion][2]">
+                                   <div class="image-answer" ng-class="results.getAnswerClass($index)"> <img ng-src="{{answer}}"> </div>
                                </div>
                            </div>
                        </div>

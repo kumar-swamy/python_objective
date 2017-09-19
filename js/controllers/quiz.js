@@ -16,23 +16,23 @@
         function setActiveQuestion(index){
             if(index === undefined){
                 var breakOut = false;
-                var quizLength = DataService.quizQuestions.length - 1;
+                var quizLength = DataService.kuijKuestions.length - 1;
                 while(!breakOut){
                     vm.activeQuestion = vm.activeQuestion < quizLength?++vm.activeQuestion:0;
                     if(vm.activeQuestion === 0){ vm.error = true; }
-                    if(DataService.quizQuestions[vm.activeQuestion].selected === null){ breakOut = true; }
+                    if(DataService.kuijKuestions[vm.activeQuestion][3] === null){ breakOut = true; }
                 }
             }else{ vm.activeQuestion = index; } 
         }
         function questionAnswered(){
-            var quizLength = DataService.quizQuestions.length;
+            var quizLength = DataService.kuijKuestions.length;
             numQuestionsAnswered = 0;
             for(var x = 0; x < quizLength; x++){
-                if(DataService.quizQuestions[vm.activeQuestion].selected !== null){
+                if(DataService.kuijKuestions[vm.activeQuestion][3] !== null){
                     numQuestionsAnswered++;
                     if(numQuestionsAnswered >= quizLength){
                         for(var i = 0; i < quizLength; i++){
-                            if(DataService.quizQuestions[i].selected === null){ setActiveQuestion(i); return; }
+                            if(DataService.kuijKuestions[i][3] === null){ setActiveQuestion(i); return; }
                         }
                         vm.error = false;
                         vm.finalise = true;
@@ -42,7 +42,7 @@
             }
             vm.setActiveQuestion();
         }
-        function selectAnswer(index){ DataService.quizQuestions[vm.activeQuestion].selected = index; } 
+        function selectAnswer(index){ DataService.kuijKuestions[vm.activeQuestion][3] = index; } 
         function finaliseAnswers(){
             vm.finalise = false;
             numQuestionsAnswered = 0;

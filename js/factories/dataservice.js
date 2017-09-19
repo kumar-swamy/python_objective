@@ -3,25 +3,27 @@
     function DataService(){
         var dataObj = {
             turtlesData: turtlesData,
-            quizQuestions: quizQuestions,
-            correctAnswers: correctAnswers
+            kuijKuestions: kuijKuestions,
+            krAkt_ansrs: krAkt_ansrs
         };
         return dataObj;
     }
-    var correctAnswers = [3, 3];
-    var quizQuestions  = [
-        {
-            type: "text", text: "li = [3, 5, 10]. li[-3] is : ? --- hint negative indeks starts from last.",
-            possibilities: [ { answer: "none" }, { answer: "error" }, { answer: "0" } , { answer: "3" }],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text", text: "property in python is : ? --- hint @property",
-            possibilities: [ { answer: "class" }, { answer: "function" }, { answer: "attribute" }, { answer: "decorator" } ],
-            selected: null,
-            correct: null
-        },
+    var krAkt_ansrs = [3, 3];
+    var kuijKuestions  = [
+        [
+            "text",
+            "li = [3, 5, 10]. li[-3] is : ? --- hint negative indeks starts from last.",
+            ["none", "error", "0", "3"],
+            null,
+            null
+        ],
+        [
+            "text",
+            "property in python is : ? --- hint @property",
+            ["class", "function", "attribute", "decorator"],
+            null,
+            null
+        ]
     ];
    var turtlesData = [ ];
 
