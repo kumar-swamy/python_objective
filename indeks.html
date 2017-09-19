@@ -4,73 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>kyuij</title>
-    <!-- Bootstrap css and my own css -->
-    <link rel="stylesheet" 
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
-        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
             <form class="form-inline well well-sm clearfix">
-                <span class="glyphicon glyphicon-search"></span>
-                <input type="text" placeholder="Search..." class="form-control" ng-model="list.search">
-                <button class="btn btn-warning pull-right" ng-click="list.activateQuiz()">
-                    <strong>start kuij</strong>
-                </button>
+                <button class="btn btn-warning pull-right" ng-click="list.activateQuiz()">start kuij</button>
             </form>
-            <div class="row">
-                <div class="col-sm-6" ng-repeat="turtle in list.data | filter:list.search">
-                    <div class="well well-sm">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img ng-src="{{turtle.image_url}}" class="img-rounded img-responsive well-image">
-                            </div>
-                            <div class="col-md-6">
-                                <h4>{{turtle.type}}</h4>
-                                <p><strong>Locations: </strong>{{turtle.locations}}</p>
-                                <p><strong>Size: </strong>{{turtle.size}}</p>
-                                <p><strong>Average Lifespan: </strong>{{turtle.lifespan}}</p>
-                                <p><strong>Diet: </strong>{{turtle.diet}}</p>
-                                <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#turtle-info" ng-click="list.changeActiveTurtle(turtle)">Learn More</button>
-                            </div>
-                        </div><!-- row -->
-                    </div><!-- well -->
-                </div><!-- col-xs-6 -->
-            </div>
-            <div class="modal" id="turtle-info">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>{{list.activeTurtle.type}}</h2>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-xs-8 col-xs-offset-2">
-                                    <img ng-src="{{list.activeTurtle.image_url}}" class="img-rounded img-responsive">
-                                </div>
-                            </div>
-                            <div class="row top-buffer">
-                                <div class="col-md-6">
-                                    <p><strong>Locations: </strong>{{list.activeTurtle.locations}}</p>
-                                    <p><strong>Size: </strong>{{list.activeTurtle.size}}</p>
-                                    <p><strong>Average Lifespan: </strong>{{list.activeTurtle.lifespan}}</p>
-                                    <p><strong>Diet: </strong>{{list.activeTurtle.diet}}</p>
-                                </div>
-                                <div class="col-xs-12 top-buffer">
-                                    <p>{{list.activeTurtle.description}}</p>
-                                    <button class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div><!-- List Controller -->
 
-		<!-- Attach the quizCtrl to the view and ng-show when the quizActive flag is set -->
         <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
             <div class="row">
                 <div class="col-xs-8">
