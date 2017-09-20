@@ -20,7 +20,7 @@
                     <option value=''>Select</option>
                 </select>
                 <label for="city">lesson</label>
-                <select id="city" ng-disabled="!sbjAktSrc || !levelSrc" ng-model="lessonSrc" ng-options="lesson for lesson in levelSrc" ng-change="list.GetSelectedLesson()>
+                <select id="city" ng-disabled="!sbjAktSrc || !levelSrc" ng-model="lessonSrc" ng-options="lesson for lesson in levelSrc" ng-change="list.GetSelectedLesson()">
                     <option value=''>Select</option>
                 </select>
                 <button class="btn btn-warning pull-right" ng-click="list.activateQuiz()">start kyuij</button>
