@@ -11,18 +11,18 @@
     <div class="container">
         <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
             <form class="form-inline well well-sm clearfix">
-                <label for="country">sbjAkt</label>
-                <select id="country" ng-model="sbjAktSrc" ng-options="country for (country, states) in sbjAkts" ng-change="list.GetSelectedCountry()">
+                <label for="sbjAkselect">sbjAkt</label>
+                <select id="sbjAkselect" ng-model="sbjAktSrc" ng-options="sbjAkt for (sbjAkt, levels) in sbjAkts" ng-change="list.GetSelectedSubject()">
                     <option value=''>Select</option>
                 </select>
                 <label for="state">level</label>
-                <select id="state" ng-disabled="!sbjAktSrc" ng-model="levelSrc" ng-options="state for (state,city) in sbjAktSrc" ng-change="list.GetSelectedState()">
+                <select id="state" ng-disabled="!sbjAktSrc" ng-model="levelSrc" ng-options="state for (state,city) in sbjAktSrc" ng-change="list.GetSelectedLevel()">
                     <option value=''>Select</option>
                 </select>
                 <label for="city">lesson</label>
-                <select id="city" ng-disabled="!sbjAktSrc || !levelSrc" ng-model="city" ng-options="city for city in levelSrc">
+                <select id="city" ng-disabled="!sbjAktSrc || !levelSrc" ng-model="lessonSrc" ng-options="lesson for lesson in levelSrc" ng-change="list.GetSelectedLesson()>
                     <option value=''>Select</option>
-                </select>               
+                </select>
                 <button class="btn btn-warning pull-right" ng-click="list.activateQuiz()">start kyuij</button>
             </form>
         </div><!-- List Controller -->
@@ -34,7 +34,7 @@
                         <h2>progress:</h2>
                         <button class="btn"
                             ng-repeat="question in quiz.dataService.kyuijKuestions"
-                            ng-class="{'btn-info': question[3] !== null, 'btn-danger': question[3] === null}" 
+                            ng-class="{'btn-info': question[3] !== null, 'btn-danger': question[3] === null}"
                             ng-click="quiz.setActiveQuestion($index)">
                             <span class="glyphicon" ng-class="{'glyphicon-pencil': question[3] !== null, 'glyphicon-question-sign': question[3] === null}"></span>
                         </button>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
 
-                
+
             </div><!-- question row -->
         </div><!-- quiz controller -->
         <div ng-controller="resultsCtrl as results" ng-show="results.quizMetrics.resultsActive">
