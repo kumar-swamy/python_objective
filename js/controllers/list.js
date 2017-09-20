@@ -9,15 +9,23 @@
         vm.changeActiveTurtle = changeActiveTurtle; // reference to a named function below
         vm.activateQuiz = activateQuiz; // reference to named function below
         vm.search = ""; // will hold the search query when user uses search bar in view
-        $scope.sbjAkts = {
-            'python': {'level1': ['builtin functions', 'list'],'level2': ['tuple', 'dictionary'],'level3': ['sets', 'dictionary']},
-            'knARa': { 'level1': ['numbers', 'pronouns', 'kolors', 'motions'], 'level2': ['vegetables', 'kitchen'], 'level3': ['Jaipur', 'Ajmer', 'Jodhpur'] },
-            'Angulrjs': { 'New South Wales': ['Sydney'], 'Victoria': ['Melbourne'] }
+        $scope.subjectlist = Object.keys(DataService.kyuijKuestionsSrc);
+        /*$scope.sbjAkts = {
+            'python': {'level1': ['lesson1', 'lesson2'],'level2': ['lesson1', 'lesson1'],'level3': ['lesson1', 'lesson1']},
+            'knARa': { 'level1': ['lesson1', 'lesson1', 'lesson1', 'lesson1'], 'level2': ['lesson1', 'lesson1'], 'level3': ['lesson1', 'lesson1', 'lesson1'] },
+            'Angulrjs': { 'New South Wales': ['lesson1'], 'Victoria': ['lesson1'] }
+        };*/
+        $scope.levellist = [];
+        $scope.GetSelectedSubject = function() {
+            $scope.strSubject = $scope.sbjAktSrc;
+            $scope.levellist = Object.keys(DataService.kyuijKuestionsSrc[$scope.strSubject]);
         };
-        $scope.GetSelectedSubject = function() { $scope.strSubject = $scope.sbjAktSrc; };
-        $scope.GetSelectedLevel = function() { $scope.strLevel = $scope.levelSrc; };
+        $scope.GetSelectedLevel = function() {
+            $scope.strLevel = $scope.levelSrc;
+            $scope.lessonlist = Object.keys(DataService.kyuijKuestionsSrc[$scope.strSubject][$scope.strLevel]);
+        };
         $scope.GetSelectedLesson = function() { $scope.strLesson = $scope.lessonSrc; };
         function changeActiveTurtle(index){ vm.activeTurtle = index; }
-        function activateQuiz(){ quizMetrics.changeState("quiz", true); }
+        function activateQuiz(){ DataService.setkyuij($scope.strSubject, $scope.strLevel, $scope.strLesson); quizMetrics.changeState("quiz", true); }
     }
 })();
