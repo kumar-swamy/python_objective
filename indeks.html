@@ -10,20 +10,20 @@
 <body>
     <div class="container">
         <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
-            <form class="form-inline well well-sm clearfix">
+            <form class="form well well-sm clearfix">
                 <label for="sbjAkselect">sbjAkt</label>
                 <select id="sbjAkselect" ng-model="sbjAktSrc" ng-options="sbjAkt for sbjAkt in subjectlist" ng-change="GetSelectedSubject()">
                     <option value=''>Select</option>
-                </select>
+                </select><br>
                 <label for="state">level</label>
                 <select id="state" ng-disabled="!sbjAktSrc" ng-model="levelSrc" ng-options="level for level in levellist" ng-change="GetSelectedLevel()">
                     <option value=''>Select</option>
-                </select>
+                </select><br>
                 <label for="city">lesson</label>
                 <select id="city" ng-disabled="!sbjAktSrc || !levelSrc" ng-model="lessonSrc" ng-options="lesson for lesson in lessonlist" ng-change="GetSelectedLesson()">
                     <option value=''>Select</option>
-                </select>
-                <button class="btn btn-warning pull-right" ng-click="list.activateQuiz()">start kyuij</button>
+                </select><br>
+                <button class="btn btn-warning" ng-click="list.activateQuiz()">start kyuij</button>
             </form>
         </div><!-- List Controller -->
 
