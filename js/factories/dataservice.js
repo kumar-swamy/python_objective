@@ -150,6 +150,50 @@
                 },
             }
         },
+        "expressjs":{
+            "level1":{
+                "lesson1":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'express().listen(port, [host], [backlog], [callback]]). maximum value of backlog is:',
+                            ['10', '50', '511', '523'],
+                            null,
+                            null
+                        ],
+                        [
+                            "text",
+                            "express().listen(port, [host], [backlog], [callback]]). callback is:",
+                            ["recursive", "synchronous", "asynchronous", "lambda"],
+                            null,
+                            null
+                        ],
+                        [
+                            "text",
+                            "app.get('*', function(req, res){res.send('Sorry, this is an invalid URL.');}); this route should be:",
+                            ["first", "last", "conditional", "synchronous"],
+                            null,
+                            null
+                        ],
+                        [
+                            "text",
+                            "for http://localhost/things/tutorialspoint/12345 route should be:",
+                            ["app.get('/things/:name/:id', ...)", "app.get('/things/?name/?id', ...)", "app.get('/things/[a-z]/[0-9]', ...)", "app.get('/things/word/digit', ...)"],
+                            null,
+                            null
+                        ],
+                        [
+                            "text",
+                            "app.use(express.static('public')); static file path is set to :",
+                            ["/public/", "/public/static", "/static/public", "public/static"],
+                            null,
+                            null
+                        ]
+                    ],
+                    'ansrs': [2, 2, 1, 0, 2]
+                },
+            }
+        },        
     };
    //var kyuij_viki = [ ];
 
