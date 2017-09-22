@@ -1,3 +1,3 @@
 (function(){
-    angular.module("learn_facts", []);
+    angular.module("learn_facts", ["ngSanitize"]);
 })();

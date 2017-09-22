@@ -50,14 +50,13 @@
                 <div class="well well-sm" ng-hide="quiz.finalise">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h4>{{quiz.activeQuestion+1 + ". " + quiz.dataService.kyuijKuestions[quiz.activeQuestion][1]}}</h4>
+                            <pre ng-bind-html="quiz.activeQuestion+1 + '. ' + quiz.dataService.kyuijKuestions[quiz.activeQuestion][1]"></pre>
                             <div class="row"
                                 ng-if="quiz.dataService.kyuijKuestions[quiz.activeQuestion][0] === 'text'">
                                 <div class="col-sm-6" ng-repeat="answer in quiz.dataService.kyuijKuestions[quiz.activeQuestion][2]">
                                     <h4 class="answer"
                                         ng-class="{'bg-info': $index === quiz.dataService.kyuijKuestions[quiz.activeQuestion][3]}"
-                                        ng-click="quiz.selectAnswer($index)">
-                                        {{answer}}
+                                        ng-click="quiz.selectAnswer($index)" ng-bind-html="answer">                                        
                                     </h4>
                                 </div>
                             </div>
@@ -95,7 +94,7 @@
         <div ng-controller="resultsCtrl as results" ng-show="results.quizMetrics.resultsActive">
            <div class="row">
                <div class="col-xs-8">
-                   <h4>rijAlts:yu skored {{results.quizMetrics.numCorrect}} / {{results.dataService.kyuijKuestions.length}} {{results.calculatePerc() | number:2}}%</h4>
+                   <span>rijAlts:yu skored {{results.quizMetrics.numCorrect}}/{{results.dataService.kyuijKuestions.length}} persentej : {{results.calculatePerc() | number:2}}% </span><span style="color:green;">bilo green is correct aansr.</span>
                    <div class="btn-toolbar">
                        <button class="btn" ng-repeat="question in results.dataService.kyuijKuestions" ng-class="{'btn-success': question[4], 'btn-danger': !question[4]}" ng-click="results.setActiveQuestion($index)">
                             <span class="glyphicon" ng-class="{'glyphicon-ok': question[4], 'glyphicon-remove': !question[4]}"></span>
@@ -112,15 +111,15 @@
                <div class="well well-sm">
                    <div class="row">
                        <div class="col-xs-12">
-                           <h4>{{results.activeQuestion+1 +". "+results.dataService.kyuijKuestions[results.activeQuestion][1]}}</h4>
+                           <h4 ng-bind-html="results.activeQuestion+1 + '. ' + results.dataService.kyuijKuestions[results.activeQuestion][1]"></h4>
                            <div class="row"
                                ng-if="results.dataService.kyuijKuestions[results.activeQuestion][0] === 'text'">
                                <div class="col-sm-6" ng-repeat="answer in results.dataService.kyuijKuestions[results.activeQuestion][2]">
                                    <h4 class="answer" ng-class="results.getAnswerClass($index)">
-                                       {{answer}}
-                                       <p class="pull-right"
+                                       <p ng-bind-html="answer"></p>
+                                       <!--p class="pull-right"
                                             ng-show="$index !== results.quizMetrics.krAkt_ansrs[results.activeQuestion] && $index === results.dataService.kyuijKuestions[results.activeQuestion][3]">your aansr</p>
-                                       <p class="pull-right" ng-show="$index === results.quizMetrics.krAkt_ansrs[results.activeQuestion]">korrekt aansr</p>
+                                       <p class="pull-right" ng-show="$index === results.quizMetrics.krAkt_ansrs[results.activeQuestion]">korrekt aansr</p-->
                                    </h4>
                                </div>
                            </div><!-- row -->
@@ -138,6 +137,7 @@
 
     <!-- third party js -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.6/angular-sanitize.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 

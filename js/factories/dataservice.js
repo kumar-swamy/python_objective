@@ -193,6 +193,29 @@
                     'ansrs': [2, 2, 1, 0, 2]
                 },
             }
+        },
+        "maths":{
+            "10th":{
+                "kuadratik ikyuations":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            "ax<sup>2</sup> + bx + c = 0 ; D(diskriminant) = &#8710; = ?",
+                            ['b<sup>2</sup> - 4a', 'c<sup>2</sup> - 4ab', 'b<sup>2</sup> - 4ac', 'a<sup>2</sup> - 4bc'],
+                            null,
+                            null
+                        ],
+                        [
+                            "text",
+                            "5x<sup>2</sup> + 6x + 1 = 0 ; D(diskriminant) = &#8710; = ?",
+                            ["5", "6", "25", "16"],
+                            null,
+                            null
+                        ],
+                    ],
+                    'ansrs': [2, 3]
+                },
+            }
         },        
     };
    //var kyuij_viki = [ ];

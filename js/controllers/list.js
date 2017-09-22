@@ -10,11 +10,6 @@
         vm.activateQuiz = activateQuiz; // reference to named function below
         vm.search = ""; // will hold the search query when user uses search bar in view
         $scope.subjectlist = Object.keys(DataService.kyuijKuestionsSrc);
-        /*$scope.sbjAkts = {
-            'python': {'level1': ['lesson1', 'lesson2'],'level2': ['lesson1', 'lesson1'],'level3': ['lesson1', 'lesson1']},
-            'knARa': { 'level1': ['lesson1', 'lesson1', 'lesson1', 'lesson1'], 'level2': ['lesson1', 'lesson1'], 'level3': ['lesson1', 'lesson1', 'lesson1'] },
-            'Angulrjs': { 'New South Wales': ['lesson1'], 'Victoria': ['lesson1'] }
-        };*/
         $scope.levellist = [];
         $scope.GetSelectedSubject = function() {
             $scope.strSubject = $scope.sbjAktSrc;
