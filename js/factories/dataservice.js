@@ -105,9 +105,15 @@
                             "property in python is : ? --- hint @property",
                             ["class", "function", "attribute", "decorator"],
                             null, null, 3
+                        ],
+                        [
+                            "text",
+                            "x = 3 ; y = x ; print(id(x), id(y)) . vhat vill be printed?",
+                            ["0, -1", "345, 567", "9251744, 9251744", "-1, 0"],
+                            null, null, 2
                         ]
                     ],
-                    'ansrs': [3, 0, 1, 2, 2, 1, 2, 2, 3, 3]
+                    'ansrs': [3, 0, 1, 2, 2, 1, 2, 2, 3, 3, 2]
                 },
                 "loop":{
                     'kuestion_options': [
@@ -175,39 +181,87 @@
                             "text",
                             'express().listen(port, [host], [backlog], [callback]]). maximum value of backlog is:',
                             ['10', '50', '511', '523'],
-                            null,
-                            null
+                            null, null, 2
                         ],
                         [
                             "text",
                             "express().listen(port, [host], [backlog], [callback]]). callback is:",
                             ["recursive", "synchronous", "asynchronous", "lambda"],
-                            null,
-                            null
+                            null, null, 2
                         ],
                         [
                             "text",
                             "app.get('*', function(req, res){res.send('Sorry, this is an invalid URL.');}); this route should be:",
                             ["first", "last", "conditional", "synchronous"],
-                            null,
-                            null
+                            null, null, 1
                         ],
                         [
                             "text",
                             "for http://localhost/things/tutorialspoint/12345 route should be:",
                             ["app.get('/things/:name/:id', ...)", "app.get('/things/?name/?id', ...)", "app.get('/things/[a-z]/[0-9]', ...)", "app.get('/things/word/digit', ...)"],
-                            null,
-                            null
+                            null, null, 0
                         ],
                         [
                             "text",
                             "app.use(express.static('public')); static file path is set to :",
                             ["/public/", "/public/static", "/static/public", "public/static"],
-                            null,
-                            null
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            "app.get('/', <b>???</b>{res.cookie('name', 'express').send('cookie set');}); replace ??? by : ",
+                            ["cookie-parser", "function(req, res)", "http.set", "http.get"],
+                            null, null, 1
                         ]
                     ],
-                    'ansrs': [2, 2, 1, 0, 2]
+                    'ansrs': [2, 2, 1, 0, 2, 1]
+                    // //
+                },
+            }
+        },
+        "django":{
+            "level1":{
+                "views":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vhich class is not in django.views.generic.base tree : ?',
+                            ['View', 'RedirectView', 'StaticView', 'TemplateView'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            "class MyView(django.views.View): def get(self, req, *a, **k) . in url.py it should be ?",
+                            ["MyView.view()", "MyView_view()", "MyView.as_view()", "MyView.call_view()"],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            "app.get('*', function(req, res){res.send('Sorry, this is an invalid URL.');}); this route should be:",
+                            ["first", "last", "conditional", "synchronous"],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            "for http://localhost/things/tutorialspoint/12345 route should be:",
+                            ["app.get('/things/:name/:id', ...)", "app.get('/things/?name/?id', ...)", "app.get('/things/[a-z]/[0-9]', ...)", "app.get('/things/word/digit', ...)"],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            "app.use(express.static('public')); static file path is set to :",
+                            ["/public/", "/public/static", "/static/public", "public/static"],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            "app.get('/', <b>???</b>{res.cookie('name', 'express').send('cookie set');}); replace ??? by : ",
+                            ["cookie-parser", "function(req, res)", "http.set", "http.get"],
+                            null, null, 1
+                        ]
+                    ],
+                    'ansrs': [2, 2, 1, 0, 2, 1]
+                    // //
                 },
             }
         },
