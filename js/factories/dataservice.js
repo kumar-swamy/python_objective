@@ -44,7 +44,7 @@
     var kyuijKuestionsSrc  = {
         "python":{
             "level1":{
-                "all":{
+                "lesson1":{
                     'kuestion_options': [
                         [
                             "text",
@@ -105,15 +105,157 @@
                             "property in python is : ? --- hint @property",
                             ["class", "function", "attribute", "decorator"],
                             null, null, 3
-                        ],
+                        ]
+                    ],
+                    'ansrs': [3, 0, 1, 2, 2, 1, 2, 2, 3, 3]
+                },
+                "lesson2":{
+                    'kuestion_options': [
                         [
                             "text",
                             "x = 3 ; y = x ; print(id(x), id(y)) . vhat vill be printed?",
                             ["0, -1", "345, 567", "9251744, 9251744", "-1, 0"],
                             null, null, 2
+                        ],
+                        [
+                            "text",
+                            "l2 = ['a', 'c'], l3 = l2 ; l3[1] = 'e' , l2 is :",
+                            ["['a', 'c']", "['c', 'a']", "['e', 'c']", "['a', 'e']"],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            "l2 and l3 are list. for deep copy of l3 into l2 :",
+                            ["l2 = copy(l3)", "l2 = copy.deepcopy(l3)", "l3 = copy(l2)", "l2 = l3"],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            "vhich is correct bilo ?",
+                            ["re.sub(source, regex, replacement)", "re.sub(regex, replacement, source)", "re.sub(source, regex)", "re.sub(regex, replacement)"],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            "class D has base class B. vhich is correct bilo ?",
+                            ["class D(B):", "class D(B)", "class D :: B:", "class D->B:"],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            "vhich is vrong bilo ?",
+                            ["import math, random", "from math import sin, pi", "from math import *", "from math include *"],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            "hao to use jsonschema to validate json from console ?",
+                            ["validate -i sample.json sample.schema", "jsonschema -i sample.schema sample.json", "jsonschema -i sample.json sample.schema", "validate -i sample.schema sample.json"],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            "vhich function is not in json module",
+                            ["json.dumps", "json.loads", "json.get", "json.dump"],
+                            null, null, 2
                         ]
                     ],
-                    'ansrs': [3, 0, 1, 2, 2, 1, 2, 2, 3, 3, 2]
+                    'ansrs': [2, 3, 1, 1, 0, 3, 2]
+                },
+                "pickle":{ // http://www.sanfoundry.com/python-questions-answers-pickle-module/
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'process of pickling in Python includes:',
+                            ['conversion of a list into a datatable', 'conversion of a byte stream into Python object hierarchy', 'conversion of a Python object hierarchy into byte stream', 'conversion of a datatable into a list'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'To sterilize an object hierarchy use f1. To desterilize a data stream use f2. f1 and f2 are ?',
+                            ['dumps(), undumps()', 'loads(), unloads()', ' loads(), dumps()', 'dumps(), loads()'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'pickle module _________ objects that have already been sterilized',
+                            ['memoizes', 'keeps track of', 'saves', 'do not remember'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'value of pickle.HIGHEST_PROTOCOL is :',
+                            ['4', '5', '3', '6'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'object = ‘a’. vhich vill give error?',
+                            ['pickle.dumps(object)', 'pickle.dumps(object, 3)', 'pickle.dumps(object, 3, True)', 'pickle.dumps("a", 2)'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vhich of following functions can ve used to find protocol version of pickle module currently being used?',
+                            ['pickle.DEFAULT', 'pickle.CURRENT', 'pickle.CURRENT_PROTOCOL', 'pickle.DEFAULT_PROTOCOL'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vhich of following functions can accept more than one positional argument?',
+                            ['pickle.dumps', 'pickle.loads', 'pickle.dump', 'pickle.load'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhich error gets raised vhen an unpicklable object is encountered by Pickler?',
+                            ['pickle.PickleError', 'pickle.PicklingError', 'pickle.UnpickleError', 'pickle.UnpicklingError'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vhich exception is not in pickle module?',
+                            ['pickle.LoadError', 'pickle.PickleError', 'pickle.PicklingError', 'pickle.UnpickleError'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhich 2 classes pickle module exports ?',
+                            ['pickle.LoadError and pickle.Unpickler', 'pickle.Pickler and pickle.Unpickler', 'pickle.Pickler and pickle.PickleError', 'pickle.Pickler and pickle.UnpickleError'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vhich of folloving cannot be pickled?',
+                            ['functions vhich are defined at top level of a module vith lambda', 'functions vhich are defined at top level of a module vith def', 'built-in functions vhich are defined at top level of a module', 'classes vhich are defined at top level of a module'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'If __getstate__() returns _________    __setstate__() module will not be called on pickling.',
+                            ['True value', 'False value', 'ValueError', 'OverflowError'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'Lambda functions cannot be pickled because:',
+                            ['Lambda functions only deal with binary values, that is, 0 and 1', 'Lambda functions cannot be called directly', 'Lambda functions cannot be identified by functions of pickle module', 'All lambda functions have same name'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'module _______________ is a comparatively faster implementation of pickle module.',
+                            ['cPickle', 'nPickle', 'gPickle', 'tPickle'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'copy module uses _____________ protocol for shallow and deep copy.',
+                            ['pickle', 'marshal', 'shelve', 'copyreg'],
+                            null, null, 0
+                        ],
+                    ],
+                    'ansrs': [2]
                 },
                 "loop":{
                     'kuestion_options': [
