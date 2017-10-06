@@ -107,7 +107,6 @@
                             null, null, 3
                         ]
                     ],
-                    'ansrs': [3, 0, 1, 2, 2, 1, 2, 2, 3, 3]
                 },
                 "lesson2":{
                     'kuestion_options': [
@@ -160,7 +159,6 @@
                             null, null, 2
                         ]
                     ],
-                    'ansrs': [2, 3, 1, 1, 0, 3, 2]
                 },
                 "pickle":{ // http://www.sanfoundry.com/python-questions-answers-pickle-module/
                     'kuestion_options': [
@@ -196,13 +194,13 @@
                         ],
                         [
                             "text",
-                            'vhich of following functions can ve used to find protocol version of pickle module currently being used?',
+                            'vhich of folloing functions can ve used to find protocol version of pickle module currently being used?',
                             ['pickle.DEFAULT', 'pickle.CURRENT', 'pickle.CURRENT_PROTOCOL', 'pickle.DEFAULT_PROTOCOL'],
                             null, null, 3
                         ],
                         [
                             "text",
-                            'vhich of following functions can accept more than one positional argument?',
+                            'vhich of folloing functions can accept more than one positional argument?',
                             ['pickle.dumps', 'pickle.loads', 'pickle.dump', 'pickle.load'],
                             null, null, 0
                         ],
@@ -255,7 +253,6 @@
                             null, null, 0
                         ],
                     ],
-                    'ansrs': [2]
                 },
                 "loop":{
                     'kuestion_options': [
@@ -263,39 +260,395 @@
                             "text",
                             'slist = list(range(42,-12,-7)). slist is : ',
                             ['[42, 30, 18, 6, -6]', '[42, 30, 23, 11, 4,]', '[42, 35, 28, 21, 14, 7, 0, -7]', '[]'],
-                            null,
-                            null
+                            null, null, 2
                         ]
                     ],
-                    'ansrs': [2]
-                },                
+                },
+                "list":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vhich of folloing commands vil create a list?',
+                            ['list1 = list()', 'list1 = []', 'list1 = list([1, 2, 3])', 'aal of mentioned'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vhat is output vhen ve ekjecute list(“hello”)?',
+                            ['["h", "e", "l", "l", "o"]', '["hello"]', '["llo"]', '["olleh"]'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'suppose li is [‘h’,’e’,’l’,’l’,’o’], vhat is len(li)?',
+                            ['5', '4', 'None', 'error'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'suppose list1 is [2445,133,12454,123], vhat is max(list1) ?',
+                            ['2445', '12454', '133', '123'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'suppose list1 is [3, 5, 25, 1, 3], vhat is min(list1) ?',
+                            ['3', '5', '25', '1'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'suppose list1 is [1, 5, 9], vhat is sum(list1) ?',
+                            ['1', '9', '15', 'error'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'to shuffle list(say list1) vhat function do ve use ?',
+                            ['list1.shuffle()', 'shuffle(list1)', 'random.shuffle(list1)', 'random.shuffleList(list1)'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'suppose list1 is [4, 2, 2, 4, 5, 2, 1, 0], vhich of the folloing is correct syntaks for slicing operation ?',
+                            ['print(list1[0])', 'print(list1[:2])', 'print(list1[:-2])', 'All of the mentioned'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'suppose list1 is [2, 33, 222, 14, 25], vhat is list1[-1] ?',
+                            ['Error', 'None', '25', '2'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'suppose list1 is [2, 33, 222, 14, 25], vhat is list1[:-1] ?',
+                            ['[2, 33, 222, 14]', 'Error', '25', '[25, 14, 222, 33, 2]'],
+                            null, null, 0
+                        ],
+                    ],
+                },
+                "string":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'print r"\\nhello" vhat is output ?',
+                            ['a new line and hello', '\\nhello', 'letter r and then hello', 'error'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'print("new" "line") vhat is output ?',
+                            ['error', 'output equivalent to print "new\nline"', 'newline', 'new line'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'print("x\\97\\x98") vhat is output ?',
+                            ['error', '97 newline 98', 'x\\97', '\\x97\\x98'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'str1="helloworld" . vhat vil bi output of str1[::-1]',
+                            ['dlrowolleh', 'hello', 'world', 'helloworld'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'print(0xA + 0xB + 0xC) :',
+                            ['0xA0xB0xC', 'error', '0x22', '33'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'ekjample = "snov vorld" print("%s" % ekjample[4:7]) vil print ?',
+                            [' vo', ' vorld', 'sn', 'rl'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'ekjample = "snov vorld" ; ekjample[3] = "s" ; print(ekjample) . vhat vil bi output',
+                            ['snov', 'snov vorld', 'error', 'snos vorld'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'print(max("vhat are you")) vil print: ',
+                            ['error', 'u', 't', 'y'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'given a string ekjample=”hello” vhat is output of ekjample.count(l)',
+                            ['2', '1', 'None', '0'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'ekjample = "helle" ; vhat is output of ekjample.find("e")',
+                            ['error', '-1', '1', '0'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'ekjample = "helle" ; vhat is output of ekjample.rfind("e")',
+                            ['-1', '4', '3', '1'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            '>>>example="helloworld" >>>example[::-1].startswith("d") vhat is output',
+                            ['dlrowolleh', 'True', '-1', 'None'],
+                            null, null, 1
+                        ],                        
+                        [
+                            "text",
+                            'to concatenate 2 strings to a 3rd vhat statements are applicable ?',
+                            ['s3 = s1 . s2', 's3 = s1.add(s2)', 's3 = s1.__add__(s2)', 's3 = s1 * s2'],
+                            null, null, 2
+                        ],                        
+                    ],
+                },
             },
             "level2":{
-                "lesson1":{
+                "list":{
                     'kuestion_options': [
                         [
                             "text",
                             'slist = list(range(42,-12,-7)). slist is : ',
                             ['[42, 30, 18, 6, -6]', '[42, 30, 23, 11, 4,]', '[42, 35, 28, 21, 14, 7, 0, -7]', '[]'],
-                            null,
-                            null
-                        ]
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            "names = ['Amir', 'Bear', 'Charlton', 'Daman'] vhat is output of print(names[-1][-1]) ?",
+                            ['A', 'Daman', 'Error', 'n'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            "Suppose list1 = [0.5 * x for x in range(0, 4)], list1 is :",
+                            ['[0, 1, 2, 3]', '[0, 1, 2, 3, 4]', '[0.0, 0.5, 1.0, 1.5]', '[0.0, 0.5, 1.0, 1.5, 2.0]'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            "Suppose list1 = [0.5 * x for x in range(0, 4)], list1 is :",
+                            ['[0, 1, 2, 3]', '[0, 1, 2, 3, 4]', '[0.0, 0.5, 1.0, 1.5]', '[0.0, 0.5, 1.0, 1.5, 2.0]'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            "list1 = [11, 2, 23] , list2 = [11, 2, 2] vhat is output of list1 < list2 ?",
+                            ['True', 'False', 'Error', 'None'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            "To add a niyu element to a list ve use vhich command ?",
+                            ['list1.add(5)', 'list1.append(5)', 'list1.addLast(5)', 'list1.addEnd(5)'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            "To insert 5 to the third position in list1, we use which command ?",
+                            ['list1.insert(3, 5)', 'list1.insert(2, 5)', 'list1.add(3, 5)', 'list1.append(3, 5)'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            "To remove string “hello” from list1, we use which command ?",
+                            ['list1.remove(“hello”)', 'list1.remove(hello)', 'list1.removeAll(“hello”)', 'list1.removeOne(“hello”)'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            "Suppose list1 is [3, 4, 5, 20, 5], what is list1.index(5) ?",
+                            ['0', '1', '4', '2'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            "Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1.count(5) ?",
+                            ['0', '4', '1', '2'],
+                            null, null, 3
+                        ],
                     ],
-                    'ansrs': [2]
                 },
             },
             "level3":{
-                "lesson1":{
+                "list":{
                     'kuestion_options': [
                         [
                             "text",
-                            'slist = list(range(42,-12,-7)). slist is : ',
-                            ['[42, 30, 18, 6, -6]', '[42, 30, 23, 11, 4,]', '[42, 35, 28, 21, 14, 7, 0, -7]', '[]'],
-                            null,
-                            null
-                        ]
+                            'Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after list1.reverse() ?',
+                            ['[3, 4, 5, 20, 5, 25, 1, 3]', '[1, 3, 3, 4, 5, 5, 20, 25]', '[25, 20, 5, 5, 4, 3, 3, 1]', ' [3, 1, 25, 5, 20, 5, 4, 3]'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.extend([34, 5]) ?',
+                            ['[3, 4, 5, 20, 5, 25, 1, 3, 34, 5]', '[1, 3, 3, 4, 5, 5, 20, 25, 34, 5]', '[25, 20, 5, 5, 4, 3, 3, 1, 34, 5]', '[1, 3, 4, 5, 20, 5, 25, 3, 34, 5]'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop(1) ?',
+                            ['[3, 4, 5, 20, 5, 25, 1, 3]', '[1, 3, 3, 4, 5, 5, 20, 25]', '[3, 5, 20, 5, 25, 1, 3]', '[1, 3, 4, 5, 20, 5, 25]'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop()?',
+                            ['[3, 4, 5, 20, 5, 25, 1]', '[1, 3, 3, 4, 5, 5, 20, 25]', '[3, 5, 20, 5, 25, 1, 3]', '[1, 3, 4, 5, 20, 5, 25]'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'What is the output of "Welcome to Python".split()',
+                            ['[“Welcome”, “to”, “Python”]', '(“Welcome”, “to”, “Python”)', '{“Welcome”, “to”, “Python”}', '“Welcome”, “to”, “Python”'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'What is the output of list("a#b#c#d".split("#"))',
+                            ['["a", "b", "c", "d"]', '["a b c d"]', '["a#b#c#d"]', '["abcd"]'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'list1 = [1, 3] ; list2 = list1 ; list1[0] = 4 ; print(list2)',
+                            ['[1, 3]', '[4, 3]', '[1, 4]', '[1, 3, 4]'],
+                            null, null, 1
+                        ],
                     ],
-                    'ansrs': [2]
+                },
+            },
+            "level4":{
+                "list":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'names1 = ["Amir", "Bala", "Charlie"] ,  names2 = [name.lower() for name in names1] , vat vil bi output of print(names2[2][0])',
+                            ['None', 'a', 'b', 'c'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'numbers = [1, 2, 3, 4] ; numbers.append([5,6,7,8]) ; vat vil bi output of print(len(numbers))',
+                            ['4', '5', '8', '12'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'To which of the following the “in” operator can be used to check if an item is in it?',
+                            ['Lists', 'Dictionary', 'Set', 'All of the mentioned'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'list1 = [1, 2, 3, 4] ; list2 = [5, 6, 7, 8] vat vil bi output of print(len(list1 + list2))',
+                            ['2', '4', '5', '8'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'veggies = ["carrot", "broccoli", "potato", "asparagus"] ; veggies.insert(veggies.index("broccoli"), "celery") vat vil bi output of print(veggies)',
+                            ['["carrot", "celery", "broccoli", "potato", "asparagus"]', '["carrot", "celery", "potato", "asparagus"]', '["carrot", "broccoli", "celery", "potato", "asparagus"]', '["celery", "carrot", "broccoli", "potato", "asparagus"]'],
+                            null, null, 0
+                        ],
+                    ],
+                },
+            },
+            "level5":{
+                "list":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'm = [[x, x + 1, x + 2] for x in range(0, 3)] . vat is m ?',
+                            ['[[1, 2, 3], [4, 5, 6], [7, 8, 9]]', '[[0, 1, 2], [1, 2, 3], [2, 3, 4]]', '[1, 2, 3, 4, 5, 6, 7, 8, 9]', '[0, 1, 2, 1, 2, 3, 2, 3, 4]'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'm = [[x, y] for x in range(0, 4) for y in range(0, 4)] vat vil bi output of len(m) ?',
+                            ['8', '12', '16', '32'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'points = [[1, 2], [3, 1.5], [0.5, 0.5]] ; points.sort() ; vat vil bi output of print(points)',
+                            ['[[1, 2], [3, 1.5], [0.5, 0.5]]', '[[3, 1.5], [1, 2], [0.5, 0.5]]', '[[0.5, 0.5], [1, 2], [3, 1.5]]', '[[0.5, 0.5], [3, 1.5], [1, 2]]'],
+                            null, null, 2
+                        ],
+                    ],
+                },
+            },
+            "level6":{
+                "list":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'a = [10,23,56,[78]] ;  b = list(a) ;  a[3][0] = 95 ; a[1] = 34 ; vat vil be output of print(b)',
+                            ['[10,34,56,[95]]', '[10,23,56,[78]]', '[10,23,56,[95]]', '[10,34,56,[78]]'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat vil bi output of print(list(zip((1,2,3),("a"),("xxx","yyy"))))',
+                            ['[(1,2,3),("a"),("xxx","yyy")]', '[(1, "a", "xxx"),(2," ","yyy"),(3," "," ")]', 'Syntax error', '[(1, "a", "xxx")]'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'a=[10,23,56,[78]] ; b=copy.deepcopy(a) ; a[3][0]=95 ; a[1]=34 ; vat vil bi output of print(b)',
+                            ['[10,34,56,[95]]', '[10,23,56,[78]]', '[10,23,56,[95]]', '[10,34,56,[78]]'],
+                            null, null, 1
+                        ],/*
+                        [
+                            "text",
+                            's="a@b@c@d" ; a=list(s.partition("@")) ; vat vil bi output of print(a)',
+                            ['["a","b","c","d"]', '["a","@","b","@","c","@","d"]', '["a","@","b@c@d"]', '["a","@","b@c@d"]'],
+                            null, null, 2
+                        ],*/
+                        [
+                            "text",
+                            's="a@b@c@d" ; b=list(s.split("@",3)) ; vat vil bi output of print(b)',
+                            ['error', '@@@', '["a","@","b","@","c","@","d"]', '["a","b","c","d"]'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'a=[1,2,3,4] ; b=[sum(a[0:x+1]) for x in range(0,len(a))] vat vil bi output of print(b)',
+                            ['10', '[1,3,5,7]', '4', '[1,3,6,10]'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'a="hello" ; b=list((x.upper(),len(x)) for x in a) vat vil bi output of print(b)',
+                            ['[("H", 1), ("E", 1), ("L", 1), ("L", 1), ("O", 1)]', '[("HELLO", 5)]', '[("H", 5), ("E", 5), ("L", 5), ("L", 5), ("O", 5)]', 'Syntax error'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'a=[[]]*3 ; a[1].append(7) vat vil bi output of print(a)',
+                            ['Syntax error', '[[7], [7], [7]]', '[[7], [], []]', '[[],7, [], []]'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'b=[2,3,4,5] a=list(filter(lambda x:x%2,b)) vat vil bi output of print(a)',
+                            ['[2,4]', '[ ]', '[3,5]', 'Invalid arguments for filter function'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'lst=[3,4,6,1,2] lst[1:2]=[7,8] vat vil bi output of print(lst)',
+                            ['[3, 7, 8, 6, 1, 2]', 'Syntax error', '[3,[7,8],6,1,2]', '[3,4,6,7,8]'],
+                            null, null, 0
+                        ],
+                    ],
                 },
             },
         },
@@ -307,11 +660,9 @@
                             "text",
                             'slist = list(range(42,-12,-7)). slist is : ',
                             ['[42, 30, 18, 6, -6]', '[42, 30, 23, 11, 4,]', '[42, 35, 28, 21, 14, 7, 0, -7]', '[]'],
-                            null,
-                            null
+                            null, null, 2
                         ]
                     ],
-                    'ansrs': [2]
                 },
             }
         },
@@ -356,7 +707,6 @@
                             null, null, 1
                         ]
                     ],
-                    'ansrs': [2, 2, 1, 0, 2, 1]
                     // //
                 },
             }
@@ -402,7 +752,51 @@
                             null, null, 1
                         ]
                     ],
-                    'ansrs': [2, 2, 1, 0, 2, 1]
+                    // //
+                },
+            }
+        },
+        "qt":{
+            "level1":{
+                "lesson1":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'Q_OBJECT macro must appear in ______ of a class',
+                            ['private section', 'public section', 'protected section', 'static namespace'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            "vhich is not true for moc(Meta-Object Compiler):",
+                            ["moc creates makefile", "moc handles Qt's C++ extensions", "moc reads a C++ header file", "moc finds class having Q_OBJECT macro"],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            "All classes that contain signals or slots must:",
+                            ["be generated from moc", "mention Q_OBJECT & derive from QObject", "be static class", "have a pure virtual function"],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            "vhich is correct ?",
+                            ["QObject::connect(signal, slot, sender, receiver)", "QObject::connect(sender, receiver, signal, slot)", "QObject::connect(sender, slot, receiver, signal)", "QObject::connect(sender, signal, receiver, slot)"],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            "2 types of dialog are",
+                            ["ok and cancel", "modal and modaless", "main and sub", "fixed and floating"],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            "app.get('/', <b>???</b>{res.cookie('name', 'express').send('cookie set');}); replace ??? by : ",
+                            ["cookie-parser", "function(req, res)", "http.set", "http.get"],
+                            null, null, 1
+                        ]
+                    ],
                     // //
                 },
             }
@@ -415,77 +809,66 @@
                             "text",
                             "which is quadratic equation below ?",
                             ['ax<sup>2</sup> + bx + c = 0', 'ax<sup>2</sup> + bx + c', 'x<sup>2</sup> + y<sup>2</sup> = c', 'ax + by -c = 0'],
-                            null,
-                            null
+                            null, null, 0
                         ],
                         [
                             "text",
                             "ax<sup>2</sup> + bx + c = 0 ; D(diskriminant) = &#8710; = ?",
                             ['b<sup>2</sup> - 4a', 'c<sup>2</sup> - 4ab', 'b<sup>2</sup> - 4ac', 'a<sup>2</sup> - 4bc'],
-                            null,
-                            null
+                            null, null, 2
                         ],
                         [
                             "text",
                             "5x<sup>2</sup> + 6x + 1 = 0 ; D(diskriminant) = &#8710; = ?",
                             ["5", "6", "25", "16"],
-                            null,
-                            null
+                            null, null, 3
                         ],
                         [
                             "text",
                             "ax<sup>2</sup> + bx + c = 0 ; &#8710; = b<sup>2</sup> - 4ac . its roots (r1, r2) are : ",
                             ["( -b &plusmn; &radic;&#8710; ) / 2a", "( -b &plusmn; &radic;&#8710; )/a", "( b &plusmn; &radic;&#8710; ) / 2a", "( -b &plusmn; &radic;&#8710; ) / 2c"],
-                            null,
-                            null
+                            null, null, 0
                         ],
                         [
                             "text",
                             "In ax<sup>2</sup> + bx + c = 0  , b<sup>2</sup> - 4ac = 0. then roots are",
                             ["positive", "negative", "imaginary", "equal"],
-                            null,
-                            null
+                            null, null, 3
                         ],
                         [
                             "text",
                             "In ax<sup>2</sup> + bx + c = 0  , b<sup>2</sup> - 4ac < 0. then roots are",
                             ["positive", "negative", "imaginary", "equal"],
-                            null,
-                            null
+                            null, null, 2
                         ],
                         [
                             "text",
                             "In ax<sup>2</sup> + bx + c = 0  , b<sup>2</sup> - 4ac > 0. then roots are",
                             ["positive", "real", "imaginary", "equal"],
-                            null,
-                            null
+                            null, null, 1
                         ],
                         [
                             "text",
                             "In x<sup>2</sup> - 9x + 20 = 0  , then roots are",
                             ["4, 5", "4, 7", "7 , 8", "5, 7"],
-                            null,
-                            null
+                            null, null, 0
                         ],                        
                         [
                             "text",
                             "sum of root is s and product of root is p. then ekuation is :",
                             ["ax<sup>2</sup> + sx + p = 0", "x<sup>2</sup> + sx + p = 0", "x<sup>2</sup> - sx + p = 0", "x<sup>2</sup> + sx - p = 0"],
-                            null,
-                            null
-                        ],                        
+                            null, null, 2
+                        ],
                         [
                             "text",
                             "25x<sup>2</sup> - 25x + 4 = 0. its roots are :",
                             ["3, 4", "2/3, 4/5", "1/5, 4/5", "6, 0"],
-                            null,
-                            null
+                            null, null, 2
                         ],
                     ],
-                    'ansrs': [0, 2, 3, 0, 3, 2, 1, 0, 2, 2]
                 },
             }
-        },        
+        },
     };
    //var kyuij_viki = [ ];
 
