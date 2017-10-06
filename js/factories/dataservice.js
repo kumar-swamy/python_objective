@@ -651,6 +651,30 @@
                     ],
                 },
             },
+            "level7":{
+                "list":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'a=[1,2,3] b=a.append(4) vat vil bi output of print(a) and print(b)?',
+                            ['[1,2,3,4] and [1,2,3,4]', '[1, 2, 3, 4] and None', 'syntax error', '[1,2,3] and [1,2,3,4]'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            '>>> a=[14,52,7] >>>> b=a.copy() >>> b is a ; vat vil bi output',
+                            ['true', 'false', 'error', 'none'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'a=[13,56,17] ; a.append([87]) ; a.extend([45,67]) ; print(a) ; vhat is output of folloing code?',
+                            ['[13, 56, 17, [87], 45, 67]', '[13, 56, 17, 87, 45, 67]', '[13, 56, 17, 87,[ 45, 67]]', '[13, 56, 17, [87], [45, 67]]'],
+                            null, null, 1
+                        ],
+                    ],
+                },
+            },
         },
         "Angulrjs":{
             "level1":{
