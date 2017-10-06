@@ -48,7 +48,7 @@
                 <div class="well well-sm" ng-hide="quiz.finalise">
                     <div class="row">
                         <div class="col-xs-12">
-                            <pre ng-bind-html="quiz.activeQuestion+1 + '. ' + quiz.dataService.kyuijKuestions[quiz.activeQuestion][1]"></pre>
+                            <h3 ng-bind-html="quiz.activeQuestion+1 + '. ' + quiz.dataService.kyuijKuestions[quiz.activeQuestion][1]"></h3>
                             <div class="row"
                                 ng-if="quiz.dataService.kyuijKuestions[quiz.activeQuestion][0] === 'text'">
                                 <div class="col-sm-6" ng-repeat="answer in quiz.dataService.kyuijKuestions[quiz.activeQuestion][2]">
@@ -68,8 +68,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                     <button class="btn btn-warning" ng-click="quiz.questionAnswered()">Continue</button>
