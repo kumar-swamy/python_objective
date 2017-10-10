@@ -264,6 +264,82 @@
                         ]
                     ],
                 },
+                "builtinfunctions":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vhich of folloing functions is a built-in function in python?',
+                            ['seed()', 'sqrt()', 'factorial()', 'print()'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vat is output of round(4.576)',
+                            ['4.5', '5', '4', '4.6'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'pow(x,y,z) is evaluated as:',
+                            ['(x**y)**z', '(x**y)/z', '(x**y)%z', '(x**y)*z'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'pow(x,y,z) is evaluated as:',
+                            ['(x**y)**z', '(x**y)/z', '(x**y)%z', '(x**y)*z'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vhat is output of all([2,4,0,6])?',
+                            ['error', 'true', 'false', '0'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vhat is output of round(4.5676,2)?',
+                            ['4.5', '4.6', '4.57', '4.56'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vhat is output of any([2>8, 4>2, 1>2])?',
+                            ['error', 'true', 'false', '4>2'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vhat is output of abs(math.sqrt(25))',
+                            ['error', '-5', '5', '5.0'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vhat is output of abs(math.sqrt(25))',
+                            ['error', '-5', '5', '5.0'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vhat is output of sum(2,4,6) sum([1,2,3])',
+                            ['error, 6', '12, error', '12, 6', 'error, error'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhat is output of all(3,0,4,2)',
+                            ['true', 'false', 'error', '0'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhat is output of min(max(False,-3,-4), 2,7)',
+                            ['2', 'False', '-3', '-4'],
+                            null, null, 1
+                        ],
+                    ],
+                },
                 "list":{
                     'kuestion_options': [
                         [
@@ -476,6 +552,64 @@
                         ],
                     ],
                 },
+                "builtinfunctions":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vat is output of chr(‘97’) and chr(97)',
+                            ['a error', '"a" a', 'error a', 'error error'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is output of complex(1+2j)',
+                            ['error', '1', '2j', '1+2j'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vat is output of complex()',
+                            ['0j', '0+0j', '0', 'error'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'divmod(a,b), vhere both "a" and "b" are integers is evaluated as:',
+                            ['(a%b, a//b)', '(a//b, a%b)', '(a//b, a*b)', '(a/b, a%b)'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vat is output of divmod(10.5,5) and divmod(2.4,1.2)',
+                            ['(2.00, 0.50) (2.00, 0.00)', '(2, 0.5) (2, 0)', '(2.0, 0.5) (2.0, 0.0)', '(2, 0.5) (2)'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is output of list(enumerate([2, 3]))',
+                            ['error', '[(1, 2), (2, 3)]', '[(0, 2), (1, 3)]', '[(2, 3)]'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is output of x=3 eval("x^2")',
+                            ['error', 1, 9, 6],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vat is output of float("1e-003") and float("2e+003")',
+                            ['3.00 300', '0.001 2000.0', '0.001 200', 'error 2003'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vat is output of float("1e-003") and float("2e+003")',
+                            ['3.00 300', '0.001 2000.0', '0.001 200', 'error 2003'],
+                            null, null, 1
+                        ],
+                    ],
+                },
             },
             "level3":{
                 "list":{
@@ -521,6 +655,46 @@
                             'list1 = [1, 3] ; list2 = list1 ; list1[0] = 4 ; print(list2)',
                             ['[1, 3]', '[4, 3]', '[1, 4]', '[1, 3, 4]'],
                             null, null, 1
+                        ],
+                    ],
+                },
+                "builtinfunctions":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vhich of folloing functions accepts only integers as arguments?',
+                            ['ord()', 'min()', 'chr()', 'any()'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'l=[2,3,4] If ve vant to print this list in reverse order, vhich of folloing methods should be used?',
+                            ['reverse(l)', 'list(reverse[(l)])', 'reversed(l)', 'list(reversed(l))'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vat is output of float("   -12345\n")',
+                            ['-12345.0 (5 blank spaces before number)', '-12345.0', 'error', '-12345.000000000…. (infinite decimal places)'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vat is output of ord(65) ord("A")',
+                            ['A 65', 'error 65', 'A error', 'error error'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vat is output of float("-infinity") float("inf")',
+                            ['–inf inf', '–infinity inf', 'error error', 'error junk value'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhich of folloing functions vil not result in an error vhen no arguments are passed to it?',
+                            ['min()', 'divmod()', 'all()', 'float()'],
+                            null, null, 0
                         ],
                     ],
                 },
@@ -670,7 +844,49 @@
                             "text",
                             'a=[13,56,17] ; a.append([87]) ; a.extend([45,67]) ; print(a) ; vhat is output of folloing code?',
                             ['[13, 56, 17, [87], 45, 67]', '[13, 56, 17, 87, 45, 67]', '[13, 56, 17, 87,[ 45, 67]]', '[13, 56, 17, [87], [45, 67]]'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'a=list((45,)*4) ;  vhat is output of print((45)*4) ; print(a)',
+                            ['180 [(45),(45),(45),(45)]', '(45,45,45,45). [45,45,45,45]', '180 [45,45,45,45]', 'syntaks error'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'lst=[[1,2],[3,4]]  vhat is output of print(sum(lst,[]))',
+                            ['[[3],[7]]', '[1,2,3,4]', 'error', '[10]'],
                             null, null, 1
+                        ],
+                        [
+                            "text",
+                            'word1="Apple" word2="Apple" list1=[1,2,3] list2=[1,2,3] vhat is output of print(word1 is word2) print(list1 is list2)',
+                            ['True True', 'False True', 'False False', 'True False'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'y=[[1],[2]] vhat is output of print(" ".join(list(map(str,y))))',
+                            ['[1] [2]', '[49] [50]', 'syntaks error', '[[1]] [[2]]'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'a=165 b=sum(list(map(int,str(a)))) vhat is output of print(b)',
+                            ['561', '5', '12', 'syntaks error'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'a=165 b=sum(list(map(int,str(a)))) vhat is output of print(b)',
+                            ['561', '5', '12', 'syntaks error'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'x = [i**+1 for i in range(3)]; vhat is output of print(x);',
+                            ['561', '5', '12', 'syntaks error'],
+                            null, null, 2
                         ],
                     ],
                 },
