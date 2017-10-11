@@ -264,6 +264,58 @@
                         ]
                     ],
                 },
+                "regAksp":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vhich module in python supports regular Akspressions?',
+                            ['re', 'regex', 'pyregex', 'none of mentioned'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vic of folloing creates a pattern object?',
+                            ['re.create(str)', 're.regex(str)', 're.compile(str)', 're.assemble(str)'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat dj function re.match do?',
+                            ['matches a pattern at the start of the string', 'matches a pattern at any position in the string', 'such a function does not exist', 'none of the mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vat dj function re.search do?',
+                            ['matches a pattern at the start of the string', 'matches a pattern at any position in the string', 'such a function does not exist', 'none of the mentioned'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'sentence = "ve are humans" matched = re.match(r"(.*) (.*?) (.*)", sentence) vat is output of print(matched.groups())',
+                            ['("ve", "are", "humans")', '(ve, are, humans)', '("ve", "humans")', 've are humans'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'sentence = "ve are humans" matched = re.match(r"(.*) (.*?) (.*)", sentence) vat is output of print(matched.group())',
+                            ['("ve", "are", "humans")', '(ve, are, humans)', '("ve", "humans")', 've are humans'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'sentence = "ve are humans" matched = re.match(r"(.*) (.*?) (.*)", sentence) vat is output of print(matched.group(2))',
+                            ['are', 've', 'humans', 've are humans'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'sentence = "horses are fast" regex = re.compile("(?P<animal>\w+) (?P<verb>\w+) (?P<adjective>\w+)") matched = re.search(regex, sentence) vat is output of print(matched.groupdict())',
+                            ['{"animal": "horses", "verb": "are", "adjective": "fast"}', '("horses", "are", "fast")', 'horses are fast', 'are'],
+                            null, null, 0
+                        ],
+                    ],
+                },
                 "builtinfunctions":{
                     'kuestion_options': [
                         [
@@ -694,7 +746,37 @@
                             "text",
                             'vhich of folloing functions vil not result in an error vhen no arguments are passed to it?',
                             ['min()', 'divmod()', 'all()', 'float()'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vat is output of hex(15)',
+                            ['f', '0xF', '0Xf', '0xf'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vhich of following functions does not throw an error?',
+                            ['ord()', 'ord(" ")', 'ord('')', 'ord("")'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vat is output of len(["hello",2, 4, 6])',
+                            ['4', '3', 'error', '6'],
                             null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vat is output of oct(7) and oct("7")',
+                            ['Error 07', '0o7 Error', '0o7 Error', '07 0o7'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is output of oct(7) and oct("7")',
+                            ['Error 07', '0o7 Error', '0o7 Error', '07 0o7'],
+                            null, null, 2
                         ],
                     ],
                 },
