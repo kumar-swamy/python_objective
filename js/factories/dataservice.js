@@ -188,7 +188,7 @@
                         ],
                         [
                             "text",
-                            'object = ‘a’. vhich vill give error?',
+                            'object = "a". vhich vill give error?',
                             ['pickle.dumps(object)', 'pickle.dumps(object, 3)', 'pickle.dumps(object, 3, True)', 'pickle.dumps("a", 2)'],
                             null, null, 2
                         ],
@@ -314,6 +314,18 @@
                             ['{"animal": "horses", "verb": "are", "adjective": "fast"}', '("horses", "are", "fast")', 'horses are fast', 'are'],
                             null, null, 0
                         ],
+                        [
+                            "text",
+                            'sentence = "horses are fast" regex = re.compile("(?P<animal>\w+) (?P<verb>\w+) (?P<adjective>\w+)") matched = re.search(regex, sentence) vat is output of print(matched.groups())',
+                            ['{"animal": "horses", "verb": "are", "adjective": "fast"}', '("horses", "are", "fast")', 'horses are fast', 'are'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'sentence = "horses are fast" regex = re.compile("(?P<animal>\w+) (?P<verb>\w+) (?P<adjective>\w+)") matched = re.search(regex, sentence) vat is output of print(matched.group(2))',
+                            ['{"animal": "horses", "verb": "are", "adjective": "fast"}', '("horses", "are", "fast")', 'horses are fast', 'are'],
+                            null, null, 3
+                        ],
                     ],
                 },
                 "builtinfunctions":{
@@ -408,7 +420,7 @@
                         ],
                         [
                             "text",
-                            'suppose li is [‘h’,’e’,’l’,’l’,’o’], vhat is len(li)?',
+                            'suppose li is ["h","e","l","l","o"], vhat is len(li)?',
                             ['5', '4', 'None', 'error'],
                             null, null, 0
                         ],
@@ -604,11 +616,75 @@
                         ],
                     ],
                 },
+                "regAksp":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'character dot (that is, ".") in default mode, matches any character other than:',
+                            ['caret', 'ampersand', 'percentage symbol', 'newline'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'expression a{5} will match characters vith previous regular expression.',
+                            ['5 or less', 'exactly 5', '5 or more', 'exactly 4'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'v,y matches start and end of string. v, y are :',
+                            ['"^", "$"', '"$", "^"', '"$", "?"', '"?", "^"'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhich of folloing vil result in an error?',
+                            ['>>> p = re.compile(“d”) >>> p.search("door")', '>>> p = re.escape("hello")', '>>> p = re.subn()', '>>> p = re.purge()'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.split("\W+", "Hello, hello, hello.")',
+                            ['["Hello", "hello", "hello."]', '["Hello, "hello", "hello"]', '"Hello", "hello", "hello", "."', '["Hello", "hello", "hello", ""]'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.findall("hello vorld", "hello", 1)")',
+                            ['[“hello”]', '[ ]', 'hello', 'hello vorld'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'Choose function whose output can be: <_sre.SRE_Match object; span=(4, 8), match="aaaa">.',
+                            ['>>> re.search("aaaa", "alohaaaa", 0)', '>>> re.match("aaaa", "alohaaaa", 0)', '>>> re.match("aaa", "alohaaa", 0)', '>>> re.search("aaa", "alohaaa", 0)'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhich of folloing functions clears regular Akspression cache?',
+                            ['re.sub()', 're.pos()', 're.purge()', 're.subn()'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.ASCII ?',
+                            ['8', '32', '64', '256'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.ASCII ?',
+                            ['8', '32', '64', '256'],
+                            null, null, 3
+                        ],
+                    ],
+                },
                 "builtinfunctions":{
                     'kuestion_options': [
                         [
                             "text",
-                            'vat is output of chr(‘97’) and chr(97)',
+                            'vat is output of chr("97") and chr(97)',
                             ['a error', '"a" a', 'error a', 'error error'],
                             null, null, 2
                         ],
@@ -707,6 +783,46 @@
                             'list1 = [1, 3] ; list2 = list1 ; list1[0] = 4 ; print(list2)',
                             ['[1, 3]', '[4, 3]', '[1, 4]', '[1, 3, 4]'],
                             null, null, 1
+                        ],
+                    ],
+                },
+                "regAksp":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vat is output of re.compile("hello", re.X)',
+                            ['["h", "e", "l", "l", "o"]', 're.compile("hello", re.VERBOSE)', 'error', 'junk value'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.split("[a-c]", "0a3B6", re.RegexFlag.IGNORECASE)',
+                            ['error', '["a", "B"]', '["0", "3B6"]', '["a"]'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.sub("morning", "evening", "good morning")',
+                            ['good evening', 'good', 'morning', 'evening'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.sub("morning", "evening", "good morning")',
+                            ['good evening', 'good', 'morning', 'evening'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.split("mum", "mumbai*", 1)',
+                            ['error', '["", "bai*"]', '["", "bai"]', '["bai*"]'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.findall("good", "good is good") and re.findall("good", "bad is good")',
+                            ['["good", "good"] ["good"]', '("good", "good") ("good")', '("good") ("good")', '["good"] ["good"]'],
+                            null, null, 0
                         ],
                     ],
                 },
@@ -816,6 +932,58 @@
                         ],
                     ],
                 },
+                "regAksp":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vat is output of re.split(r"(a)(t)", "Maths is a difficult subject")',
+                            ['["M a t h s i s a d i f f i c u l t s u b j e c t"]', '["Maths", "is", "a", "difficult", "subject"]', '"Maths is a difficult subject"', '["M", "a", "t", "hs is a difficult subject"]'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            's = "abc123 xyz666 lmn-11 def77" vat is output of re.sub(r"\b([a-z]+)(\d+)", r"\2\1:", s)',
+                            ['123abc: 666xyz: lmn-11 77def:', '77def: lmn-11: 666xyz: 123abc', 'abc123:", "xyz666:", "lmn-11:", "def77:', 'abc123: xyz666: lmn-11: def77'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.subn("A", "X", "AAAAAA", count=4)',
+                            ['XXXXAA, 4', '("AAAAAA", 4)', '("XXXXAA", 4)"', 'AAAAAA, 4'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is output of n = re.sub(r"\w+", "Hello", "Cats and dogs")',
+                            ['Hello', 'Hello Hello Hello', '["Hello", "Hello", "Hello"]', '("Hello", "Hello", "Hello")'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'v = re.compile("[A-Za-z]+") v.findall("it vil rain today") vat is output?',
+                            ['it vil rain today', '("it vil rain today")', '["it vil rain today"]', '["it", "vil", "rain", "today"]'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'in functions re.search.start(group) and re.search.end(group), if argument groups not specified, it defaults to:',
+                            ['jiro', 'none', 'one', 'error'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.split(r"\s+", "Chrome is better than explorer", maxspilt=3)',
+                            ['["Chrome", "is", "better", "than", "explorer"]', '["Chrome", "is", "better", "than explorer"]', '("Chrome", "is", "better", "than explorer")', '"Chrome is better" "than explorer"'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'a=re.compile("[0-9]+") ; a.findall("7 apples and 4 mangoes"). vat is output',
+                            ['["apples" "and" "mangoes"]', '(7, 4)', '["7", "4"]', 'error'],
+                            null, null, 2
+                        ],
+                    ],
+                },
             },
             "level5":{
                 "list":{
@@ -837,6 +1005,28 @@
                             'points = [[1, 2], [3, 1.5], [0.5, 0.5]] ; points.sort() ; vat vil bi output of print(points)',
                             ['[[1, 2], [3, 1.5], [0.5, 0.5]]', '[[3, 1.5], [1, 2], [0.5, 0.5]]', '[[0.5, 0.5], [1, 2], [3, 1.5]]', '[[0.5, 0.5], [3, 1.5], [1, 2]]'],
                             null, null, 2
+                        ],
+                    ],
+                },
+                "regAksp":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vhich of folloing functions returns a dictionary mapping group names to group numbers?',
+                            ['re.compile.group', 're.compile.groupindex', 're.compile.index', 're.compile.indexgroup'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vhich of folloing statements regarding output of function re.match is incorrect?',
+                            ['"pq*" vil match "pq"', '"pq?" matches "p"', '"p{4}, q" does not match "pppq"', '"pq+" matches "p"'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vhich of folloing functions does not accept any argument?',
+                            ['re.purge', 're.compile', 're.findall', 're.match'],
+                            null, null, 0
                         ],
                     ],
                 },
