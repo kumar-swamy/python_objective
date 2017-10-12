@@ -873,7 +873,7 @@
                         [
                             "text",
                             'vhich of following functions does not throw an error?',
-                            ['ord()', 'ord(" ")', 'ord('')', 'ord("")'],
+                            ['ord()', 'ord(" ")', 'ord("")', 'ord("")'],
                             null, null, 1
                         ],
                         [
