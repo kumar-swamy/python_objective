@@ -264,6 +264,138 @@
                         ]
                     ],
                 },
+                "classes_objects":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            '_____ represents an entity in real world with its identity and behaviour.',
+                            ['A method', 'An object', 'A class', 'An operator'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            '_____ is used to create an object.',
+                            ['class', 'constructor', 'User-defined functions', 'In-built functions'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            '_____ is used to create an object.',
+                            ['class', 'constructor', 'User-defined functions', 'In-built functions'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'What is setattr() used for?',
+                            ['To access the attribute of the object', 'To set an attribute', 'To check if an attribute exists or not', 'To delete an attribute'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'What is getattr() used for?',
+                            ['To access the attribute of the object', 'To delete an attribute', 'To check if an attribute exists or not', 'To set an attribute'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            "What is Instantiation in terms of OOP terminology?",
+                            ['Deleting an instance of class', 'Modifying an instance of class', 'Copying an instance of class', 'Creating an instance of class'],
+                            null, null, 3
+                        ],
+                    ],
+                },
+                "ooverloading":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'f = foo() vhich function is called when format(f) is called:',
+                            ['format()', '__format__()', 'str()', '__str__()'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vhich operator is overloaded by __invert__()?',
+                            ['!', '~', '^', '-'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'vhich function overloads the == operator?',
+                            ['__eq__()', '__equ__()', '__isequal__()', 'none of the mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhich operator is overloaded by __lg__()?',
+                            ['<', '>', '!=', 'none of mentioned'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'Which function overloads the >> operator?',
+                            ['__more__()', '__gt__()', '__ge__()', 'none of mentioned'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'Let A and B be objects of class Foo. Which functions are called when print(A + B) is executed?',
+                            ['__add__(), __str__()', '__str__(), __add__()', '__sum__(), __str__()', '__str__(), __sum__()'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'Which operator is overloaded by the __or__() function?',
+                            ['||', '|', '//', '/'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'Which function overloads the // operator?',
+                            ['__div__()', '__ceildiv__()', '__floordiv__()', '__truediv__()'],
+                            null, null, 2
+                        ],
+                    ],
+                },
+                "files":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'to open a file c:&#92;scores.txt for reading, ve use',
+                            ['infile = open("c:\\scores.txt", "r")', 'infile = open("c:\\\\scores.txt","r")', 'infile = open(file = "c:\\scores.txt", "r")', 'infile = open(file = "c:\\\\scores.txt","r")'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'to open a file c:&#92;scores.txt for vriting, ve use',
+                            ['outfile = open("c:\\scores.txt", "w")', 'outfile = open("c:\\\\scores.txt", "w")', 'outfile = open(file = "c:\\scores.txt", "w")', 'outfile = open(file = "c:\\\\scores.txt", "w")'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'to open a file c:&#92;scores.txt for appending, ve use',
+                            ['outfile = open("c:\\\\scores.txt", "a")', 'outfile = open("c:\\\\scores.txt", "rw")', 'outfile = open(file = "c:\\scores.txt", "w")', 'outfile = open(file = "c:\\\\scores.txt", "w")'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhich of folloing statements are true?',
+                            ['vhen you open a file for reading, if file does not Aksist, an error occurs', 'vhen you open a file for vriting, if file does not Aksist, a niyu file is created', 'vhen you open a file for vriting, if file Aksists, Akjisting file is overvritten vith niyu file', 'aal of mentioned'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'To read two characters from a file object infile, we use',
+                            ['infile.read(2)', 'infile.read()', 'infile.readline()', 'infile.readlines()'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'to read entire remaining contents of file as a string from a file object infile, ve use',
+                            ['infile.read(2)', 'infile.read()', 'infile.readline()', 'infile.readlines()'],
+                            null, null, 1
+                        ],
+                    ],
+                },
                 "regAksp":{
                     'kuestion_options': [
                         [
@@ -281,13 +413,13 @@
                         [
                             "text",
                             'vat dj function re.match do?',
-                            ['matches a pattern at the start of the string', 'matches a pattern at any position in the string', 'such a function does not exist', 'none of the mentioned'],
+                            ['matches a pattern at  start of  string', 'matches a pattern at any position in  string', 'such a function does not Aksist', 'none of  mentioned'],
                             null, null, 0
                         ],
                         [
                             "text",
                             'vat dj function re.search do?',
-                            ['matches a pattern at the start of the string', 'matches a pattern at any position in the string', 'such a function does not exist', 'none of the mentioned'],
+                            ['matches a pattern at  start of  string', 'matches a pattern at any position in  string', 'such a function does not Aksist', 'none of  mentioned'],
                             null, null, 1
                         ],
                         [
@@ -450,8 +582,8 @@
                         ],
                         [
                             "text",
-                            'suppose list1 is [4, 2, 2, 4, 5, 2, 1, 0], vhich of the folloing is correct syntaks for slicing operation ?',
-                            ['print(list1[0])', 'print(list1[:2])', 'print(list1[:-2])', 'All of the mentioned'],
+                            'suppose list1 is [4, 2, 2, 4, 5, 2, 1, 0], vhich of  folloing is correct syntaks for slicing operation ?',
+                            ['print(list1[0])', 'print(list1[:2])', 'print(list1[:-2])', 'All of  mentioned'],
                             null, null, 3
                         ],
                         [
@@ -592,7 +724,7 @@
                         ],
                         [
                             "text",
-                            "To insert 5 to the third position in list1, we use which command ?",
+                            "To insert 5 to  third position in list1, we use which command ?",
                             ['list1.insert(3, 5)', 'list1.insert(2, 5)', 'list1.add(3, 5)', 'list1.append(3, 5)'],
                             null, null, 0
                         ],
@@ -613,6 +745,70 @@
                             "Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1.count(5) ?",
                             ['0', '4', '1', '2'],
                             null, null, 3
+                        ],
+                    ],
+                },
+                "files":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'vic aar 2 built-in functions to read a line of tekst from standard input, vic by default comes from keyboard?',
+                            ['raw_input and input', 'input and scan', 'scan and scanner', 'scanner'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'str = raw_input("Enter your input: "); print "Received input is : ", str',
+                            ['Enter your input: Hello Python Received input is : Hello Python', 'Enter your input: Hello Python Received input is : Hello', 'Enter your input: Hello Python Received input is : Python', 'none of  mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'str = input("Enter your input: "); print "Received input is : ", str',
+                            ['Enter your input: [x*5 for x in range(2,10,2)]. Received input is : [x*5 for x in range(2,10,2)]', 'Enter your input: [x*5 for x in range(2,10,2)]. Received input is : [10, 30, 20, 40]', 'Enter your input: [x*5 for x in range(2,10,2)]. Received input is : [10, 10, 30, 40].', 'none of  mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhich one of folloing is not attributes of file',
+                            ['closed', 'softspace', 'rename', 'mode'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'What is use of tell() method in python?',
+                            ['tells you current position within file', 'tells you  end position within  file', 'tells you  file is opened or not', 'none of  mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'What is  current syntax of rename() a file?',
+                            ['rename(current_file_name, new_file_name)', 'rename(new_file_name, current_file_name,)', 'rename(()(current_file_name, new_file_name))', 'none of  mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'What is  current syntax of remove() a file?',
+                            ['remove(file_name)', 'remove(new_file_name, current_file_name,)', 'remove(() , file_name))', 'none of  mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'fo = open("foo.txt", "rw+"); fo.next() returns :',
+                            ['nekst character from file', 'cursor pointing nekst character', 'nekst input line', 'none of  mentioned'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is use of seek() method in files?',
+                            ["sets the file’s current position at the offset", "sets the file’s previous position at the offset", "sets the file’s current position within the file", 'none of  mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vat is use of truncate() method in file?',
+                            ["truncates the file’s size", "deletes the content of the file", "deletes the file’s size", 'none of  mentioned'],
+                            null, null, 0
                         ],
                     ],
                 },
@@ -677,6 +873,34 @@
                             'vat is output of re.ASCII ?',
                             ['8', '32', '64', '256'],
                             null, null, 3
+                        ],
+                    ],
+                },
+                "class_objects":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'assignment of more than one function to a particular operator is ____',
+                            ['operator over-assignment', 'operator overriding', 'operator overloading', 'operator instance'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vhich of following is not a class method?',
+                            ['Non-static', 'Static', 'Bounded', 'Unbounded'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'What are the methods which begin and end with two underscore characters called?',
+                            ['Special methods', 'In-built methods', 'User-defined methods', 'Additional methods'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'What does print(Test.__name__) display (assuming Test is the name of the class) ?',
+                            ['()', 'Exception is thrown', 'Test', '__main__'],
+                            null, null, 2
                         ],
                     ],
                 },
@@ -768,13 +992,13 @@
                         ],
                         [
                             "text",
-                            'What is the output of "Welcome to Python".split()',
+                            'What is  output of "Welcome to Python".split()',
                             ['[“Welcome”, “to”, “Python”]', '(“Welcome”, “to”, “Python”)', '{“Welcome”, “to”, “Python”}', '“Welcome”, “to”, “Python”'],
                             null, null, 0
                         ],
                         [
                             "text",
-                            'What is the output of list("a#b#c#d".split("#"))',
+                            'What is  output of list("a#b#c#d".split("#"))',
                             ['["a", "b", "c", "d"]', '["a b c d"]', '["a#b#c#d"]', '["abcd"]'],
                             null, null, 0
                         ],
@@ -822,6 +1046,46 @@
                             "text",
                             'vat is output of re.findall("good", "good is good") and re.findall("good", "bad is good")',
                             ['["good", "good"] ["good"]', '("good", "good") ("good")', '("good") ("good")', '["good"] ["good"]'],
+                            null, null, 0
+                        ],
+                    ],
+                },
+                "files":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'Which is/are basic I/O connections in file?',
+                            ['Standard Input', 'Standard Output', 'Standard Errors', 'All of the mentioned'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'vat is pickling',
+                            ['it is used for object serialization', 'it is used for object de-serialization', 'none of mentioned', 'aal of mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vat is unpickling',
+                            ['It is used for object serialization', 'It is used for object deserialization', 'None of mentioned', 'aal of mentioned'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'What is the correct syntax of open() function?',
+                            ['file = open(file_name [, access_mode][, buffering])', 'file object = open(file_name [, access_mode][, buffering])', 'file object = open(file_name)', 'none of the mentioned'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'correct syntaks of file.writelines() is?',
+                            ['file.writelines(sequence)', 'fileObject.writelines()', 'fileObject.writelines(sequence)', 'none of the mentioned'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'correct syntaks of file.readlines() is?',
+                            ['fileObject.readlines(sizehint)', 'fileObject.readlines()', 'fileObject.readlines(sequence)', 'none of the mentioned'],
                             null, null, 0
                         ],
                     ],
@@ -914,8 +1178,8 @@
                         ],
                         [
                             "text",
-                            'To which of the following the “in” operator can be used to check if an item is in it?',
-                            ['Lists', 'Dictionary', 'Set', 'All of the mentioned'],
+                            'To which of  following  “in” operator can be used to check if an item is in it?',
+                            ['Lists', 'Dictionary', 'Set', 'All of  mentioned'],
                             null, null, 3
                         ],
                         [
@@ -928,6 +1192,70 @@
                             "text",
                             'veggies = ["carrot", "broccoli", "potato", "asparagus"] ; veggies.insert(veggies.index("broccoli"), "celery") vat vil bi output of print(veggies)',
                             ['["carrot", "celery", "broccoli", "potato", "asparagus"]', '["carrot", "celery", "potato", "asparagus"]', '["carrot", "broccoli", "celery", "potato", "asparagus"]', '["celery", "carrot", "broccoli", "potato", "asparagus"]'],
+                            null, null, 0
+                        ],
+                    ],
+                },
+                "files":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'In file handling, what does this terms means “r, a”?',
+                            ['read, append', 'append, read', 'all of mentioned', 'none of mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'What is use of “w” in file handling?',
+                            ['read', 'write', 'append', 'none of mentioned'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'What is use of "a" in file handling?',
+                            ['read', 'write', 'append', 'none of mentioned'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vhich function is used to read all characters?',
+                            ['read()', 'readcharacters()', 'readall()', 'readchar()'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'Which function is used to read single line from file?',
+                            ['readline()', 'readlines()', 'readstatement()', 'readfullline()'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vhich function is used to write all the characters?',
+                            ['write()', 'writecharacters()', 'writeall()', 'writechar()'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'Which function is used to write a list of string in a file',
+                            ['writeline()', 'writelines()', 'writestatement()', 'writefullline()'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'Which function is used to close a file in python?',
+                            ['Close()', 'Stop()', 'End()', 'Closefile()'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'is it possible to create a text file in python?',
+                            ['Yes', 'No', 'Machine dependent', 'All of the mentioned'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'Which of the following is modes of both writing and reading in binary format in file.?',
+                            ['wb+', 'w', 'wb', 'w+'],
                             null, null, 0
                         ],
                     ],
@@ -1027,6 +1355,30 @@
                             'vhich of folloing functions does not accept any argument?',
                             ['re.purge', 're.compile', 're.findall', 're.match'],
                             null, null, 0
+                        ],
+                        [
+                            "text",
+                            'a = re.compile("0-9") ; vat is output of a.findall("3 trees")',
+                            ['[]', '["3"]', 'error', '["trees"]'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vhich of folloing lines of code vil not sho a match?',
+                            ['re.match("ab*", "a")', 're.match("ab*", "ab")', 're.match("ab*", "abb")', 're.match("ab*", "ba")'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'm = re.search("a", "blue umbrella") vat is output of m.re.pattern',
+                            ['{}', 'blue umbrella', 'a', 'no output'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'vat is output of re.sub("Y", "X", "AAAAAA", count=2)',
+                            ['YXAAAA', '("YXAAAA")', '("AAAAAA")', '"AAAAAA"'],
+                            null, null, 3
                         ],
                     ],
                 },
