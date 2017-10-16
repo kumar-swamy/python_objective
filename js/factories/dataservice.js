@@ -263,6 +263,68 @@
                             null, null, 2
                         ]
                     ],
+                },                
+                "polymorphism":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'Which of the following best describes polymorphism?',
+                            ['Ability of a class to derive members of another class as a part of its own definition', 'Means of bundling instance variables and methods in order to restrict access to certain class members', 'Focuses on variables and passing of variables to functions', 'Allows for objects of different types and behaviour to be treated as the same general type'],
+                            null, null, 3
+                        ],
+                        [
+                            "text",
+                            'What is the biggest reason for the use of polymorphism?',
+                            ['It allows the programmer to think at a more abstract level', 'There is less program code to write', 'The program will have a more elegant design, and will be easier to maintain and update', 'Program code takes up lesser space'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'What is the use of duck typing?',
+                            ['More restriction on the type values that can be passed to a given method', 'No restriction on the type values that can be passed to a given method', 'Less restriction on the type values that can be passed to a given method', 'Makes the program code smaller'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'Which of the following statements is true?',
+                            ['A non-private method in a superclass can be overridden', 'A subclass method can be overridden by the superclass', 'A private method in a superclass can be overridden', 'Overriding isn’t possible in Python'],
+                            null, null, 0
+                        ],
+                    ],
+                },
+                "inheritance":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            'suppose B is a subclass of A, to invoke __init__ method in A from B, vat is line of code you should vrite?',
+                            ['A.__init__(self)', 'B.__init__(self)', 'A.__init__(B)', 'B.__init__(A)'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'vat dj built-in function type do in contekst of classes?',
+                            ['Determines object name of any value', 'Determines the class name of any value', 'Determines class description of any value', 'Determines the file name of any value'],
+                            null, null, 1
+                        ],
+                        [
+                            "text",
+                            'Which of the following is not a type of inheritance?',
+                            ['Double-level', 'Multi-level', 'Single-level', 'Multiple'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'What does built-in function help do in context of classes?',
+                            ['Determines the object name of any value', 'Determines the class identifiers of any value', 'Determines class description of any built-in type', 'Determines class description of any user-defined built-in type'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'What does built-in function help do in context of classes?',
+                            ['Determines the object name of any value', 'Determines the class identifiers of any value', 'Determines class description of any built-in type', 'Determines class description of any user-defined built-in type'],
+                            null, null, 2
+                        ],
+                    ],
                 },
                 "classes_objects":{
                     'kuestion_options': [
@@ -745,6 +807,40 @@
                             "Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1.count(5) ?",
                             ['0', '4', '1', '2'],
                             null, null, 3
+                        ],
+                    ],
+                },
+                "inheritance":{
+                    'kuestion_options': [
+                        [
+                            "text",
+                            "Which of the following statements isn’t true?",
+                            ['A non-private method in a superclass can be overridden', 'A derived class is a subset of superclass', 'The value of a private variable in the superclass can be changed in the subclass', 'When invoking the constructor from a subclass, the constructor of superclass is automatically invoked'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'Which of the following statements is true?',
+                            ['The __new__() method automatically invokes the __init__ method', 'The __init__ method is defined in the object class', 'The __eq(other) method is defined in the object class', 'The __repr__() method is defined in the object class'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'Which of the following is not a type of inheritance?',
+                            ['Double-level', 'Multi-level', 'Single-level', 'Multiple'],
+                            null, null, 0
+                        ],
+                        [
+                            "text",
+                            'What does built-in function help do in context of classes?',
+                            ['Determines the object name of any value', 'Determines the class identifiers of any value', 'Determines class description of any built-in type', 'Determines class description of any user-defined built-in type'],
+                            null, null, 2
+                        ],
+                        [
+                            "text",
+                            'What does built-in function help do in context of classes?',
+                            ['Determines the object name of any value', 'Determines the class identifiers of any value', 'Determines class description of any built-in type', 'Determines class description of any user-defined built-in type'],
+                            null, null, 2
                         ],
                     ],
                 },
